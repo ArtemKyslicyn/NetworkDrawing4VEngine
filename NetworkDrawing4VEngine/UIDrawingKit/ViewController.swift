@@ -175,15 +175,15 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
         super.prepare(for: segue, sender: sender)
-        let settingsViewController = segue.destination as! SettingsViewController
-        settingsViewController.delegate = self
-        settingsViewController.color = color
-        settingsViewController.brushSize = brushSize
-        settingsViewController.opacityValue = opacityValue
-		settingsViewController.timeInterval = self.timeout
+//        let settingsViewController = segue.destination as! SettingsViewController
+//        settingsViewController.delegate = self
+//        settingsViewController.color = color
+//        settingsViewController.brushSize = brushSize
+//        settingsViewController.opacityValue = opacityValue
+//		settingsViewController.timeInterval = self.timeout
     }
 	
-	func runTimedCode()
+	@objc func runTimedCode()
 	{
 		self.canvasImageView.image = nil
 		isDrawing = !isDrawing
@@ -195,7 +195,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 	
-	override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+	override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
 		if motion == .motionShake {
 			if settingButton.isHidden{
 				settingButton.isHidden = false
@@ -211,31 +211,31 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController:SettingsViewControllerDelegate {
-    
-    /**
-    Delegate method of settingsViewController that is invoked on finish.
-    The canvas settings are set using this delegate.
-    - parameters:
-        - settingsViewController: The view controller object which has the properties required to set the canvas settings
-     */
-    func settingsViewControllerDidFinish(_ settingsViewController:SettingsViewController) {
-        self.color = settingsViewController.color
-        self.brushSize = settingsViewController.brushSize
-        self.opacityValue = settingsViewController.opacityValue
-        if(settingsViewController.color != UIColor.white){
-			canvasImageView.drawingLayer.strokeColor = settingsViewController.color.cgColor
-			canvasImageView.backgroundLayer.strokeColor = settingsViewController.color.cgColor
-			canvasImageView.drawingLayer.lineWidth = settingsViewController.brushSize
-			canvasImageView.backgroundLayer.lineWidth = settingsViewController.brushSize
-			self.timeout = settingsViewController.timeInterval
-			self.onlyStylus = settingsViewController.onlyStylus
-			clearTimer?.invalidate()
-			clearTimer = Timer.scheduledTimer(timeInterval: self.timeout, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
-        }
-        print("values changed")
-        
-    }
-    
-}
+//extension ViewController:SettingsViewControllerDelegate {
+//
+//    /**
+//    Delegate method of settingsViewController that is invoked on finish.
+//    The canvas settings are set using this delegate.
+//    - parameters:
+//        - settingsViewController: The view controller object which has the properties required to set the canvas settings
+//     */
+//    func settingsViewControllerDidFinish(_ settingsViewController:SettingsViewController) {
+//        self.color = settingsViewController.color
+//        self.brushSize = settingsViewController.brushSize
+//        self.opacityValue = settingsViewController.opacityValue
+//        if(settingsViewController.color != UIColor.white){
+//			canvasImageView.drawingLayer.strokeColor = settingsViewController.color.cgColor
+//			canvasImageView.backgroundLayer.strokeColor = settingsViewController.color.cgColor
+//			canvasImageView.drawingLayer.lineWidth = settingsViewController.brushSize
+//			canvasImageView.backgroundLayer.lineWidth = settingsViewController.brushSize
+//			self.timeout = settingsViewController.timeInterval
+//			self.onlyStylus = settingsViewController.onlyStylus
+//			clearTimer?.invalidate()
+//			clearTimer = Timer.scheduledTimer(timeInterval: self.timeout, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
+//        }
+//        print("values changed")
+//
+//    }
+//
+//}
 

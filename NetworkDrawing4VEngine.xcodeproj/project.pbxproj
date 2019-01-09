@@ -7,39 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC5338E12135211200D874C0 /* LiveStreamingServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338DE2135211200D874C0 /* LiveStreamingServer.swift */; };
-		AC5338E22135211200D874C0 /* LiveStreamingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338DF2135211200D874C0 /* LiveStreamingClient.swift */; };
+		2FDE4363244AFF223F003FD9 /* Pods_NetworkDrawing4VEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BFA6312B7DD128EB6BE5AD /* Pods_NetworkDrawing4VEngine.framework */; };
+		AC3A89862136C677001ADDDE /* DrawBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A897D2136C677001ADDDE /* DrawBoardViewModel.swift */; };
+		AC3A89872136C677001ADDDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A897E2136C677001ADDDE /* ViewController.swift */; };
+		AC3A89882136C677001ADDDE /* DrawBoardViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A89802136C677001ADDDE /* DrawBoardViewFactory.swift */; };
+		AC3A89892136C677001ADDDE /* DrawBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A89822136C677001ADDDE /* DrawBoardViewController.swift */; };
+		AC3A898A2136C677001ADDDE /* DrawBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3A89832136C677001ADDDE /* DrawBoardViewController.xib */; };
+		AC3A898B2136C677001ADDDE /* DrawBoardViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A89852136C677001ADDDE /* DrawBoardViewPresenter.swift */; };
+		AC5338E12135211200D874C0 /* NetworkServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338DE2135211200D874C0 /* NetworkServer.swift */; };
+		AC5338E22135211200D874C0 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338DF2135211200D874C0 /* NetworkClient.swift */; };
 		AC5338E32135211200D874C0 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338E02135211200D874C0 /* NetworkConfig.swift */; };
 		AC5338E521352F9D00D874C0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338E421352F9D00D874C0 /* User.swift */; };
 		AC5338F02135A95000D874C0 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338E82135A95000D874C0 /* SettingsViewModel.swift */; };
 		AC5338F12135A95000D874C0 /* SettingsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338EA2135A95000D874C0 /* SettingsViewFactory.swift */; };
 		AC5338F22135A95000D874C0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338EC2135A95000D874C0 /* SettingsViewController.swift */; };
-		AC5338F32135A95100D874C0 /*  SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5338ED2135A95000D874C0 /*  SettingsViewController.xib */; };
+		AC5338F32135A95100D874C0 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5338ED2135A95000D874C0 /* SettingsViewController.xib */; };
 		AC5338F42135A95100D874C0 /* SettingsDetailsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338EF2135A95000D874C0 /* SettingsDetailsViewPresenter.swift */; };
 		AC5338F62135AB6300D874C0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338F52135AB6300D874C0 /* Settings.swift */; };
+		AC5338FB2136B24400D874C0 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338F92136B24400D874C0 /* UIViewControllerExtension.swift */; };
+		AC5338FC2136B24400D874C0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338FA2136B24400D874C0 /* UIView.swift */; };
+		AC5338FE2136B2A600D874C0 /* ScribblableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338FD2136B2A600D874C0 /* ScribblableView.swift */; };
+		AC5339002136B97400D874C0 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5338FF2136B97400D874C0 /* Network.framework */; };
+		AC7284F5213AAA070079EDA6 /* DrawBoardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7284F4213AAA070079EDA6 /* DrawBoardInteractor.swift */; };
 		ACCFB6C82134113C00C54430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6C72134113C00C54430 /* AppDelegate.swift */; };
-		ACCFB6CA2134113D00C54430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6C92134113D00C54430 /* ViewController.swift */; };
 		ACCFB6CD2134113D00C54430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCFB6CB2134113D00C54430 /* Main.storyboard */; };
 		ACCFB6CF2134113E00C54430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCFB6CE2134113E00C54430 /* Assets.xcassets */; };
 		ACCFB6D22134113E00C54430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCFB6D02134113E00C54430 /* LaunchScreen.storyboard */; };
 		ACCFB6DD2134113E00C54430 /* NetworkDrawing4VEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6DC2134113E00C54430 /* NetworkDrawing4VEngineTests.swift */; };
-		ACCFB70121343B4B00C54430 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6E721343B4B00C54430 /* UsersRouter.swift */; };
-		ACCFB70221343B4B00C54430 /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6EA21343B4B00C54430 /* UsersListViewModel.swift */; };
-		ACCFB70321343B4B00C54430 /* UsersListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6EC21343B4B00C54430 /* UsersListViewFactory.swift */; };
-		ACCFB70421343B4B00C54430 /* UsersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6EE21343B4B00C54430 /* UsersListTableViewController.swift */; };
-		ACCFB70521343B4B00C54430 /* UsersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6EF21343B4B00C54430 /* UsersListTableViewCell.swift */; };
-		ACCFB70621343B4B00C54430 /* UsersListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACCFB6F021343B4B00C54430 /* UsersListTableViewCell.xib */; };
-		ACCFB70721343B4B00C54430 /* UsersListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACCFB6F121343B4B00C54430 /* UsersListTableViewController.xib */; };
-		ACCFB70821343B4B00C54430 /* UsersListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6F321343B4B00C54430 /* UsersListViewPresenter.swift */; };
-		ACCFB70921343B4B00C54430 /* UsersParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6F521343B4B00C54430 /* UsersParser.swift */; };
-		ACCFB70A21343B4B00C54430 /* UsersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6F621343B4B00C54430 /* UsersListInteractor.swift */; };
-		ACCFB70B21343B4B00C54430 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6F921343B4B00C54430 /* UserDetailsViewModel.swift */; };
-		ACCFB70C21343B4B00C54430 /* UserDetailsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6FB21343B4B00C54430 /* UserDetailsViewFactory.swift */; };
-		ACCFB70D21343B4B00C54430 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6FD21343B4B00C54430 /* UserDetailsViewController.swift */; };
-		ACCFB70E21343B4B00C54430 /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACCFB6FE21343B4B00C54430 /* UserDetailsViewController.xib */; };
-		ACCFB70F21343B4C00C54430 /* UserDetailsViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB70021343B4B00C54430 /* UserDetailsViewPresenter.swift */; };
+		ACCFB70121343B4B00C54430 /* DrawingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6E721343B4B00C54430 /* DrawingRouter.swift */; };
 		ACCFB7162134486A00C54430 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB7142134486A00C54430 /* Router.swift */; };
 		ACCFB7172134486A00C54430 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB7152134486A00C54430 /* ViewPresenter.swift */; };
+		D2E59202CA30AFC62448B65E /* Pods_NetworkDrawing4VEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBBFB66D8E1DA8FDC965626 /* Pods_NetworkDrawing4VEngineTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,19 +51,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC5338DE2135211200D874C0 /* LiveStreamingServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamingServer.swift; sourceTree = "<group>"; };
-		AC5338DF2135211200D874C0 /* LiveStreamingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveStreamingClient.swift; sourceTree = "<group>"; };
+		5E7BDA9F19BEB66134CBBF5C /* Pods-NetworkDrawing4VEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkDrawing4VEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkDrawing4VEngine/Pods-NetworkDrawing4VEngine.release.xcconfig"; sourceTree = "<group>"; };
+		70BFA6312B7DD128EB6BE5AD /* Pods_NetworkDrawing4VEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkDrawing4VEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76EAF53BE8758C176DEA3A4D /* Pods-NetworkDrawing4VEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkDrawing4VEngineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkDrawing4VEngineTests/Pods-NetworkDrawing4VEngineTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC3A897D2136C677001ADDDE /* DrawBoardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawBoardViewModel.swift; sourceTree = "<group>"; };
+		AC3A897E2136C677001ADDDE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC3A89802136C677001ADDDE /* DrawBoardViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawBoardViewFactory.swift; sourceTree = "<group>"; };
+		AC3A89822136C677001ADDDE /* DrawBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawBoardViewController.swift; sourceTree = "<group>"; };
+		AC3A89832136C677001ADDDE /* DrawBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawBoardViewController.xib; sourceTree = "<group>"; };
+		AC3A89852136C677001ADDDE /* DrawBoardViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawBoardViewPresenter.swift; sourceTree = "<group>"; };
+		AC5338DE2135211200D874C0 /* NetworkServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServer.swift; sourceTree = "<group>"; };
+		AC5338DF2135211200D874C0 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		AC5338E02135211200D874C0 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		AC5338E421352F9D00D874C0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AC5338E82135A95000D874C0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		AC5338EA2135A95000D874C0 /* SettingsViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewFactory.swift; sourceTree = "<group>"; };
 		AC5338EC2135A95000D874C0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		AC5338ED2135A95000D874C0 /*  SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = " SettingsViewController.xib"; sourceTree = "<group>"; };
+		AC5338ED2135A95000D874C0 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		AC5338EF2135A95000D874C0 /* SettingsDetailsViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsDetailsViewPresenter.swift; sourceTree = "<group>"; };
 		AC5338F52135AB6300D874C0 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		AC5338F92136B24400D874C0 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		AC5338FA2136B24400D874C0 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		AC5338FD2136B2A600D874C0 /* ScribblableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScribblableView.swift; sourceTree = "<group>"; };
+		AC5338FF2136B97400D874C0 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		AC7284F4213AAA070079EDA6 /* DrawBoardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBoardInteractor.swift; sourceTree = "<group>"; };
 		ACCFB6C42134113C00C54430 /* NetworkDrawing4VEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkDrawing4VEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCFB6C72134113C00C54430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACCFB6C92134113D00C54430 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACCFB6CC2134113D00C54430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACCFB6CE2134113E00C54430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACCFB6D12134113E00C54430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,23 +84,12 @@
 		ACCFB6D82134113E00C54430 /* NetworkDrawing4VEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkDrawing4VEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCFB6DC2134113E00C54430 /* NetworkDrawing4VEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDrawing4VEngineTests.swift; sourceTree = "<group>"; };
 		ACCFB6DE2134113E00C54430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACCFB6E721343B4B00C54430 /* UsersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
-		ACCFB6EA21343B4B00C54430 /* UsersListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
-		ACCFB6EC21343B4B00C54430 /* UsersListViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListViewFactory.swift; sourceTree = "<group>"; };
-		ACCFB6EE21343B4B00C54430 /* UsersListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListTableViewController.swift; sourceTree = "<group>"; };
-		ACCFB6EF21343B4B00C54430 /* UsersListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListTableViewCell.swift; sourceTree = "<group>"; };
-		ACCFB6F021343B4B00C54430 /* UsersListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsersListTableViewCell.xib; sourceTree = "<group>"; };
-		ACCFB6F121343B4B00C54430 /* UsersListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UsersListTableViewController.xib; sourceTree = "<group>"; };
-		ACCFB6F321343B4B00C54430 /* UsersListViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListViewPresenter.swift; sourceTree = "<group>"; };
-		ACCFB6F521343B4B00C54430 /* UsersParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersParser.swift; sourceTree = "<group>"; };
-		ACCFB6F621343B4B00C54430 /* UsersListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListInteractor.swift; sourceTree = "<group>"; };
-		ACCFB6F921343B4B00C54430 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
-		ACCFB6FB21343B4B00C54430 /* UserDetailsViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewFactory.swift; sourceTree = "<group>"; };
-		ACCFB6FD21343B4B00C54430 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
-		ACCFB6FE21343B4B00C54430 /* UserDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
-		ACCFB70021343B4B00C54430 /* UserDetailsViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewPresenter.swift; sourceTree = "<group>"; };
+		ACCFB6E721343B4B00C54430 /* DrawingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingRouter.swift; sourceTree = "<group>"; };
 		ACCFB7142134486A00C54430 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = NetworkDrawing4VEngine/UI/BaseProtocols/Router.swift; sourceTree = SOURCE_ROOT; };
 		ACCFB7152134486A00C54430 /* ViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewPresenter.swift; path = NetworkDrawing4VEngine/UI/BaseProtocols/ViewPresenter.swift; sourceTree = SOURCE_ROOT; };
+		CB256B1CD18100B983DFBEAD /* Pods-NetworkDrawing4VEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkDrawing4VEngine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkDrawing4VEngine/Pods-NetworkDrawing4VEngine.debug.xcconfig"; sourceTree = "<group>"; };
+		DC982224DCDDDF0E351E3998 /* Pods-NetworkDrawing4VEngineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkDrawing4VEngineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkDrawing4VEngineTests/Pods-NetworkDrawing4VEngineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FBBBFB66D8E1DA8FDC965626 /* Pods_NetworkDrawing4VEngineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkDrawing4VEngineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5339002136B97400D874C0 /* Network.framework in Frameworks */,
+				2FDE4363244AFF223F003FD9 /* Pods_NetworkDrawing4VEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +106,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E59202CA30AFC62448B65E /* Pods_NetworkDrawing4VEngineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A755D22E3FB3BA9C0C87873 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB256B1CD18100B983DFBEAD /* Pods-NetworkDrawing4VEngine.debug.xcconfig */,
+				5E7BDA9F19BEB66134CBBF5C /* Pods-NetworkDrawing4VEngine.release.xcconfig */,
+				DC982224DCDDDF0E351E3998 /* Pods-NetworkDrawing4VEngineTests.debug.xcconfig */,
+				76EAF53BE8758C176DEA3A4D /* Pods-NetworkDrawing4VEngineTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC3A897B2136C677001ADDDE /* DrawBoard */ = {
+			isa = PBXGroup;
+			children = (
+				AC7284F3213A9F780079EDA6 /* Interactor */,
+				AC3A897C2136C677001ADDDE /* ViewModel */,
+				AC3A897F2136C677001ADDDE /* ViewFactory */,
+				AC3A89812136C677001ADDDE /* View */,
+				AC3A89842136C677001ADDDE /* ViewPresenter */,
+			);
+			path = DrawBoard;
+			sourceTree = "<group>";
+		};
+		AC3A897C2136C677001ADDDE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC3A897D2136C677001ADDDE /* DrawBoardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC3A897F2136C677001ADDDE /* ViewFactory */ = {
+			isa = PBXGroup;
+			children = (
+				AC3A89802136C677001ADDDE /* DrawBoardViewFactory.swift */,
+			);
+			path = ViewFactory;
+			sourceTree = "<group>";
+		};
+		AC3A89812136C677001ADDDE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC3A89822136C677001ADDDE /* DrawBoardViewController.swift */,
+				AC3A89832136C677001ADDDE /* DrawBoardViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC3A89842136C677001ADDDE /* ViewPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				AC3A89852136C677001ADDDE /* DrawBoardViewPresenter.swift */,
+			);
+			path = ViewPresenter;
+			sourceTree = "<group>";
+		};
 		AC5338E62135A95000D874C0 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5338EC2135A95000D874C0 /* SettingsViewController.swift */,
-				AC5338ED2135A95000D874C0 /*  SettingsViewController.xib */,
+				AC5338ED2135A95000D874C0 /* SettingsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,12 +213,31 @@
 			path = ViewPresenter;
 			sourceTree = "<group>";
 		};
+		AC5338F82136B18800D874C0 /* UIDrawingKit */ = {
+			isa = PBXGroup;
+			children = (
+				AC3A897E2136C677001ADDDE /* ViewController.swift */,
+				AC5338FD2136B2A600D874C0 /* ScribblableView.swift */,
+			);
+			path = UIDrawingKit;
+			sourceTree = "<group>";
+		};
+		AC7284F3213A9F780079EDA6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AC7284F4213AAA070079EDA6 /* DrawBoardInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		ACCFB6BB2134113C00C54430 = {
 			isa = PBXGroup;
 			children = (
 				ACCFB6C62134113C00C54430 /* NetworkDrawing4VEngine */,
 				ACCFB6DB2134113E00C54430 /* NetworkDrawing4VEngineTests */,
 				ACCFB6C52134113C00C54430 /* Products */,
+				6A755D22E3FB3BA9C0C87873 /* Pods */,
+				B56398034C4C51052EF8E014 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,10 +253,10 @@
 		ACCFB6C62134113C00C54430 /* NetworkDrawing4VEngine */ = {
 			isa = PBXGroup;
 			children = (
+				AC5338F82136B18800D874C0 /* UIDrawingKit */,
 				ACCFB71121343B9400C54430 /* CoreLayer */,
 				ACCFB71021343B5000C54430 /* UI */,
 				ACCFB6C72134113C00C54430 /* AppDelegate.swift */,
-				ACCFB6C92134113D00C54430 /* ViewController.swift */,
 				ACCFB6CB2134113D00C54430 /* Main.storyboard */,
 				ACCFB6CE2134113E00C54430 /* Assets.xcassets */,
 				ACCFB6D02134113E00C54430 /* LaunchScreen.storyboard */,
@@ -196,113 +274,12 @@
 			path = NetworkDrawing4VEngineTests;
 			sourceTree = "<group>";
 		};
-		ACCFB6E821343B4B00C54430 /* UsersList */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB6E921343B4B00C54430 /* ViewModel */,
-				ACCFB6EB21343B4B00C54430 /* ViewFactory */,
-				ACCFB6ED21343B4B00C54430 /* View */,
-				ACCFB6F221343B4B00C54430 /* ViewPresenter */,
-				ACCFB6F421343B4B00C54430 /* Interactor */,
-			);
-			path = UsersList;
-			sourceTree = "<group>";
-		};
-		ACCFB6E921343B4B00C54430 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB6EA21343B4B00C54430 /* UsersListViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		ACCFB6EB21343B4B00C54430 /* ViewFactory */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB6EC21343B4B00C54430 /* UsersListViewFactory.swift */,
-			);
-			path = ViewFactory;
-			sourceTree = "<group>";
-		};
-		ACCFB6ED21343B4B00C54430 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB6EE21343B4B00C54430 /* UsersListTableViewController.swift */,
-				ACCFB6EF21343B4B00C54430 /* UsersListTableViewCell.swift */,
-				ACCFB6F021343B4B00C54430 /* UsersListTableViewCell.xib */,
-				ACCFB6F121343B4B00C54430 /* UsersListTableViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		ACCFB6F221343B4B00C54430 /* ViewPresenter */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB6F321343B4B00C54430 /* UsersListViewPresenter.swift */,
-			);
-			path = ViewPresenter;
-			sourceTree = "<group>";
-		};
-		ACCFB6F421343B4B00C54430 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB6F521343B4B00C54430 /* UsersParser.swift */,
-				ACCFB6F621343B4B00C54430 /* UsersListInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		ACCFB6F721343B4B00C54430 /* UserDetails */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB6F821343B4B00C54430 /* ViewModel */,
-				ACCFB6FA21343B4B00C54430 /* ViewFactory */,
-				ACCFB6FC21343B4B00C54430 /* View */,
-				ACCFB6FF21343B4B00C54430 /* ViewPresenter */,
-			);
-			path = UserDetails;
-			sourceTree = "<group>";
-		};
-		ACCFB6F821343B4B00C54430 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB6F921343B4B00C54430 /* UserDetailsViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		ACCFB6FA21343B4B00C54430 /* ViewFactory */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB6FB21343B4B00C54430 /* UserDetailsViewFactory.swift */,
-			);
-			path = ViewFactory;
-			sourceTree = "<group>";
-		};
-		ACCFB6FC21343B4B00C54430 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB6FD21343B4B00C54430 /* UserDetailsViewController.swift */,
-				ACCFB6FE21343B4B00C54430 /* UserDetailsViewController.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		ACCFB6FF21343B4B00C54430 /* ViewPresenter */ = {
-			isa = PBXGroup;
-			children = (
-				ACCFB70021343B4B00C54430 /* UserDetailsViewPresenter.swift */,
-			);
-			path = ViewPresenter;
-			sourceTree = "<group>";
-		};
 		ACCFB71021343B5000C54430 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				AC3A897B2136C677001ADDDE /* DrawBoard */,
 				AC5338E62135A95000D874C0 /* Settings */,
-				ACCFB6F721343B4B00C54430 /* UserDetails */,
-				ACCFB6E821343B4B00C54430 /* UsersList */,
-				ACCFB6E721343B4B00C54430 /* UsersRouter.swift */,
+				ACCFB6E721343B4B00C54430 /* DrawingRouter.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -310,6 +287,7 @@
 		ACCFB71121343B9400C54430 /* CoreLayer */ = {
 			isa = PBXGroup;
 			children = (
+				ACE0FE2D2175BF8700D36164 /* Converters */,
 				ACCFB71B2134545500C54430 /* Models */,
 				ACCFB71821344AE200C54430 /* Networking */,
 				ACCFB7132134484B00C54430 /* Extensions */,
@@ -330,6 +308,8 @@
 		ACCFB7132134484B00C54430 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AC5338FA2136B24400D874C0 /* UIView.swift */,
+				AC5338F92136B24400D874C0 /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -337,8 +317,8 @@
 		ACCFB71821344AE200C54430 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				AC5338DF2135211200D874C0 /* LiveStreamingClient.swift */,
-				AC5338DE2135211200D874C0 /* LiveStreamingServer.swift */,
+				AC5338DF2135211200D874C0 /* NetworkClient.swift */,
+				AC5338DE2135211200D874C0 /* NetworkServer.swift */,
 				AC5338E02135211200D874C0 /* NetworkConfig.swift */,
 			);
 			path = Networking;
@@ -353,6 +333,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		ACE0FE2D2175BF8700D36164 /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Converters;
+			sourceTree = "<group>";
+		};
+		B56398034C4C51052EF8E014 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC5338FF2136B97400D874C0 /* Network.framework */,
+				70BFA6312B7DD128EB6BE5AD /* Pods_NetworkDrawing4VEngine.framework */,
+				FBBBFB66D8E1DA8FDC965626 /* Pods_NetworkDrawing4VEngineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -360,9 +357,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACCFB6E12134113E00C54430 /* Build configuration list for PBXNativeTarget "NetworkDrawing4VEngine" */;
 			buildPhases = (
+				B83CD7A4292BF0B98A7B167F /* [CP] Check Pods Manifest.lock */,
 				ACCFB6C02134113C00C54430 /* Sources */,
 				ACCFB6C12134113C00C54430 /* Frameworks */,
 				ACCFB6C22134113C00C54430 /* Resources */,
+				9FE0E20447565E9F1F792F21 /* [CP] Embed Pods Frameworks */,
+				3F8EA8D8D195CF0EF5A5B0C1 /* [CP] Copy Pods Resources */,
+				AC91EAFA21C6B4FD000CBA9E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -377,9 +378,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACCFB6E42134113E00C54430 /* Build configuration list for PBXNativeTarget "NetworkDrawing4VEngineTests" */;
 			buildPhases = (
+				7B474D9D5B8196A3E3ACC799 /* [CP] Check Pods Manifest.lock */,
 				ACCFB6D42134113E00C54430 /* Sources */,
 				ACCFB6D52134113E00C54430 /* Frameworks */,
 				ACCFB6D62134113E00C54430 /* Resources */,
+				5F2542DF25F2FE9FF1A6F3E1 /* [CP] Embed Pods Frameworks */,
+				CD6BB2051FEC303979F237FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -434,13 +438,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACCFB70621343B4B00C54430 /* UsersListTableViewCell.xib in Resources */,
+				AC3A898A2136C677001ADDDE /* DrawBoardViewController.xib in Resources */,
 				ACCFB6D22134113E00C54430 /* LaunchScreen.storyboard in Resources */,
-				ACCFB70E21343B4B00C54430 /* UserDetailsViewController.xib in Resources */,
-				ACCFB70721343B4B00C54430 /* UsersListTableViewController.xib in Resources */,
 				ACCFB6CF2134113E00C54430 /* Assets.xcassets in Resources */,
 				ACCFB6CD2134113D00C54430 /* Main.storyboard in Resources */,
-				AC5338F32135A95100D874C0 /*  SettingsViewController.xib in Resources */,
+				AC5338F32135A95100D874C0 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,36 +455,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F8EA8D8D195CF0EF5A5B0C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkDrawing4VEngine/Pods-NetworkDrawing4VEngine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F2542DF25F2FE9FF1A6F3E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkDrawing4VEngineTests/Pods-NetworkDrawing4VEngineTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B474D9D5B8196A3E3ACC799 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkDrawing4VEngineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FE0E20447565E9F1F792F21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NetworkDrawing4VEngine/Pods-NetworkDrawing4VEngine-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChromaColorPicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkDrawing4VEngine/Pods-NetworkDrawing4VEngine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC91EAFA21C6B4FD000CBA9E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		B83CD7A4292BF0B98A7B167F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkDrawing4VEngine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6BB2051FEC303979F237FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkDrawing4VEngineTests/Pods-NetworkDrawing4VEngineTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACCFB6C02134113C00C54430 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACCFB70821343B4B00C54430 /* UsersListViewPresenter.swift in Sources */,
 				AC5338F12135A95000D874C0 /* SettingsViewFactory.swift in Sources */,
 				ACCFB7172134486A00C54430 /* ViewPresenter.swift in Sources */,
-				ACCFB70321343B4B00C54430 /* UsersListViewFactory.swift in Sources */,
-				AC5338E22135211200D874C0 /* LiveStreamingClient.swift in Sources */,
-				ACCFB6CA2134113D00C54430 /* ViewController.swift in Sources */,
-				ACCFB70F21343B4C00C54430 /* UserDetailsViewPresenter.swift in Sources */,
-				ACCFB70A21343B4B00C54430 /* UsersListInteractor.swift in Sources */,
-				ACCFB70221343B4B00C54430 /* UsersListViewModel.swift in Sources */,
+				AC5338E22135211200D874C0 /* NetworkClient.swift in Sources */,
+				AC7284F5213AAA070079EDA6 /* DrawBoardInteractor.swift in Sources */,
+				AC5338FC2136B24400D874C0 /* UIView.swift in Sources */,
+				AC5338FE2136B2A600D874C0 /* ScribblableView.swift in Sources */,
 				AC5338F62135AB6300D874C0 /* Settings.swift in Sources */,
 				AC5338E521352F9D00D874C0 /* User.swift in Sources */,
-				ACCFB70121343B4B00C54430 /* UsersRouter.swift in Sources */,
+				ACCFB70121343B4B00C54430 /* DrawingRouter.swift in Sources */,
+				AC3A89862136C677001ADDDE /* DrawBoardViewModel.swift in Sources */,
 				ACCFB7162134486A00C54430 /* Router.swift in Sources */,
+				AC3A89892136C677001ADDDE /* DrawBoardViewController.swift in Sources */,
 				AC5338F22135A95000D874C0 /* SettingsViewController.swift in Sources */,
 				AC5338F02135A95000D874C0 /* SettingsViewModel.swift in Sources */,
-				ACCFB70421343B4B00C54430 /* UsersListTableViewController.swift in Sources */,
-				AC5338E12135211200D874C0 /* LiveStreamingServer.swift in Sources */,
+				AC3A89872136C677001ADDDE /* ViewController.swift in Sources */,
+				AC5338E12135211200D874C0 /* NetworkServer.swift in Sources */,
 				ACCFB6C82134113C00C54430 /* AppDelegate.swift in Sources */,
 				AC5338F42135A95100D874C0 /* SettingsDetailsViewPresenter.swift in Sources */,
+				AC3A898B2136C677001ADDDE /* DrawBoardViewPresenter.swift in Sources */,
 				AC5338E32135211200D874C0 /* NetworkConfig.swift in Sources */,
-				ACCFB70D21343B4B00C54430 /* UserDetailsViewController.swift in Sources */,
-				ACCFB70B21343B4B00C54430 /* UserDetailsViewModel.swift in Sources */,
-				ACCFB70521343B4B00C54430 /* UsersListTableViewCell.swift in Sources */,
-				ACCFB70921343B4B00C54430 /* UsersParser.swift in Sources */,
-				ACCFB70C21343B4B00C54430 /* UserDetailsViewFactory.swift in Sources */,
+				AC3A89882136C677001ADDDE /* DrawBoardViewFactory.swift in Sources */,
+				AC5338FB2136B24400D874C0 /* UIViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +761,7 @@
 		};
 		ACCFB6E22134113E00C54430 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB256B1CD18100B983DFBEAD /* Pods-NetworkDrawing4VEngine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -660,6 +780,7 @@
 		};
 		ACCFB6E32134113E00C54430 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E7BDA9F19BEB66134CBBF5C /* Pods-NetworkDrawing4VEngine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -678,6 +799,7 @@
 		};
 		ACCFB6E52134113E00C54430 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC982224DCDDDF0E351E3998 /* Pods-NetworkDrawing4VEngineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -699,6 +821,7 @@
 		};
 		ACCFB6E62134113E00C54430 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76EAF53BE8758C176DEA3A4D /* Pods-NetworkDrawing4VEngineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

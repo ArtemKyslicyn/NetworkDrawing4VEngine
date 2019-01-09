@@ -12,9 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-
+    var mainRouter: Router?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+		let rootViewController = UIViewController()
+		
+		window = UIWindow()
+		window?.rootViewController = rootViewController
+		
+		let usersRouter = DrawingRouter(parentViewController: rootViewController)
+		usersRouter.showInitial()
+		
+		window?.makeKeyAndVisible()
+		
+		mainRouter = usersRouter
 		// Override point for customization after application launch.
 		return true
 	}

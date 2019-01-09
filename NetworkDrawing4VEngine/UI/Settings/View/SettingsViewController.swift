@@ -1,64 +1,49 @@
 //
-//  UserDetailsViewController.swift
+//  DrawBoardViewController.swift
 //
 //  4VEngine
 //
-//  Copyright (c) 2017 Marco Santarossa (https://marcosantadev.com)
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in
-//  all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//  THE SOFTWARE.
-//
+
 
 import UIKit
+import ChromaColorPicker
 
 class SettingsViewController: UIViewController {
 
-    @IBOutlet private weak var userNameLabel: UILabel!
-    
-    private unowned let viewModel: SettingsViewModel
-    
-    init(viewModel: SettingsViewModel) {
-        self.viewModel = viewModel
-        
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        //userNameLabel.text = viewModel.userName
-    }
-    
-    @IBAction func onCloseButton(_ sender: Any) {
-        viewModel.closeButtonDidTap()
-    }
+	@IBOutlet weak var timerLabel: UILabel!
+	@IBOutlet weak var neatColorPicker: ChromaColorPicker!
+	@IBOutlet weak var timerSlider: UISlider!
+	@IBOutlet weak var brushSlider: UISlider!
+	@IBOutlet weak var opacitySlider: UISlider!
+	@IBOutlet weak var stylusSwitch: UISwitch!
+	@IBOutlet weak var brushView: UIImageView!
 	
 	var color:UIColor = UIColor.black
 	var brushSize:CGFloat = 5.0
 	var opacityValue:CGFloat = 1.0
 	var timeInterval:Double = 15
-	var delegate:SettingsViewControllerDelegate?
+	//var delegate:SettingsViewControllerDelegate?
 	var onlyStylus:Bool = true
+    private  let viewModel: SettingsViewModel
 	
+    init(viewModel: SettingsViewModel) {
+        self.viewModel = viewModel
+		
+        super.init(nibName: "SettingsViewController", bundle: nil)
+    }
+	
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+	
+	
+	
+    @IBAction func onCloseButton(_ sender: Any) {
+        viewModel.closeButtonDidTap()
+    }
+	
+	
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// ColorPicker object used to set the color. Has methods to read and set the color
@@ -66,10 +51,10 @@ class SettingsViewController: UIViewController {
 		neatColorPicker.padding = 5
 		neatColorPicker.stroke = 3
 		neatColorPicker.hexLabel.textColor = UIColor.black
-		neatColorPicker.adjustToColor(color)
+		neatColorPicker.adjustToColor(self.viewModel.settings.color)
 		
-		drawPreview(color: color)
-		timerSlider.value = Float(timeInterval)
+		drawPreview(color: self.viewModel.settings.color)
+		timerSlider.value = Float(self.viewModel.settings.timeInterval)
 		
 		// Do any additional setup after loading the view.
 	}
@@ -84,13 +69,14 @@ class SettingsViewController: UIViewController {
 	*/
 	@IBAction func colorChanged(_ sender: Any) {
 		
-		color = neatColorPicker.currentColor
-		drawPreview(color: neatColorPicker.currentColor)
+	   self.viewModel.settings.color = neatColorPicker.currentColor
+//		color = neatColorPicker.currentColor
+		drawPreview(color: self.viewModel.settings.color)
 	}
 	
 	@IBAction func timerChanged(_ sender: Any) {
-		timeInterval = Double(timerSlider.value)
-		timerLabel.text = "Timer " + "\(timeInterval)"
+		self.viewModel.settings.timeInterval = Double(timerSlider.value)
+		timerLabel.text = "\(self.viewModel.settings.timeInterval)"
 	}
 	/**
 	brushSizeChanged is an action method invoked when the value of brushSizeSlider is changed
@@ -99,7 +85,7 @@ class SettingsViewController: UIViewController {
 	*/
 	@IBAction func brushSizeChanged(_ sender: Any) {
 		
-		brushSize = CGFloat(brushSizeSlider.value * 50)
+		self.viewModel.settings.brushSize = CGFloat(brushSlider.value * 50)
 		drawPreview(color: neatColorPicker.currentColor)
 	}
 	
@@ -110,7 +96,7 @@ class SettingsViewController: UIViewController {
 	*/
 	@IBAction func opacityChanged(_ sender: Any) {
 		
-		opacityValue = CGFloat(opacitySlider.value)
+		self.viewModel.settings.opacityValue = CGFloat(self.opacitySlider.value)
 		drawPreview(color: neatColorPicker.currentColor)
 		
 	}
@@ -122,12 +108,12 @@ class SettingsViewController: UIViewController {
 	- sender: The UIButton object that invokes this method on press
 	*/
 	@IBAction func settingsSelected(_ sender: Any) {
-		self.onlyStylus = self.stylusSwitch.isOn
-		if delegate != nil {
-			delegate?.settingsViewControllerDidFinish(self)
-		}
-		
-		dismiss(animated: true, completion: nil)
+		self.viewModel.settings.onlyStylus = self.stylusSwitch.isOn
+		self.viewModel.settings.brushSize = CGFloat(brushSlider.value * 50)
+//		if delegate != nil {
+//			delegate?.settingsViewControllerDidFinish(self)
+//		}
+		self.viewModel.closeButtonDidTap()
 		
 	}
 	
@@ -140,10 +126,10 @@ class SettingsViewController: UIViewController {
 	func drawPreview (color:UIColor) {
 		UIGraphicsBeginImageContext(brushView.frame.size)
 		let context = UIGraphicsGetCurrentContext()
-		
-		context!.setFillColor(color.withAlphaComponent(opacityValue).cgColor)
-		context!.fillEllipse(in: CGRect(x: 0, y: 0, width: brushSize, height: brushSize))
-		
+
+		context!.setFillColor(color.withAlphaComponent(self.viewModel.settings.opacityValue).cgColor)
+		context!.fillEllipse(in: CGRect(x: 0, y: 0, width: self.viewModel.settings.brushSize, height: self.viewModel.settings.brushSize))
+
 		brushView.image = UIGraphicsGetImageFromCurrentImageContext()
 		UIGraphicsEndImageContext()
 		
@@ -155,14 +141,4 @@ class SettingsViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 	
-	
-	/*
-	// MARK: - Navigation
-	
-	// In a storyboard-based application, you will often want to do a little preparation before navigation
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-	// Get the new view controller using segue.destinationViewController.
-	// Pass the selected object to the new view controller.
-	}
-	*/
 }

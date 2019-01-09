@@ -1,17 +1,16 @@
 //
-//  LiveStreamingClient.swift
-//  TestNetworkSwift
+//  Settings.swift
+//  NetworkDrawing4VEngine
 //
-//  Created by Matvey Kravtsov on 05/07/2018.
-//  Copyright © 2018 Matvey Kravtsov. All rights reserved.
+//  Created by Artem Kislitsyn on 28.08.2018.
+//  Copyright © 2018 FreeIPA Mobile. All rights reserved.
 //
-
 import Foundation
 import Network
 import UIKit
 
 
-class LiveStreamingClient {
+class NetworkClientClient {
     var connection: NWConnection
     var queue: DispatchQueue
     weak var controller: UIViewController!

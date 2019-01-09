@@ -32,35 +32,45 @@ protocol UsersListNavigationDelegate: class {
 }
 
 // Delegate used to close the user details
-protocol UserDetailsNavigationDelegate: class {
-    func userDetailsCloseDidTap()
+protocol DrawBoardNavigationDelegate: class {
+	func openSettingsWith(settings:Settings)
 }
 
-// Delegate used to close the user details
 protocol SettingsNavigationDelegate: class {
+	func openSettingsWith(settings:Settings)
 	func settingsCloseDidTap()
 }
 
-final class UsersRouter {
+
+//// Delegate used to close the user details
+//protocol SettingsNavigationDelegate: class {
+//	func settingsCloseDidTap()
+//}
+
+protocol BoardDrawNavigationDelegate: class {
+	func settingsCloseDidTap()
+}
+
+final class DrawingRouter {
 
 	// Parent view controller to add the components
     fileprivate let parentViewController: UIViewController
 
 	// Dictionary of presenters used
     fileprivate var presenters = [String: ViewPresenter]()
-    
+	
     init(parentViewController: UIViewController) {
         self.parentViewController = parentViewController
     }
 }
 
-extension UsersRouter: Router {
+extension DrawingRouter: Router {
 	// Shows first component, the users list
 	func showInitial() {
-		let usersListPresenter = UsersListViewPresenter(navigationDelegate: self)
+		let usersListPresenter = DrawBoardViewPresenter(settings: Settings(), navigationDelegate: self)
 		usersListPresenter.present(in: parentViewController)
 
-		presenters["UsersList"] = usersListPresenter
+		presenters["DrawBoard"] = usersListPresenter
 	}
 
 	// Closes the router removing all its components
@@ -78,18 +88,23 @@ extension UsersRouter: Router {
 	}
 }
 
-extension UsersRouter: UsersListNavigationDelegate {
-    func usersListSelected(for user: User) {
-        let userDetailsPresenter = UserDetailsViewPresenter(user: user, navigationDelegate: self)
-        userDetailsPresenter.present(in: parentViewController)
-        
-        presenters["UserDetails"] = userDetailsPresenter
-    }
+extension DrawingRouter: DrawBoardNavigationDelegate {
+
+
 }
 
-extension UsersRouter: UserDetailsNavigationDelegate {
-    func userDetailsCloseDidTap() {
-		// Removes user details components from the parent view controller
-		removePresenter(for: "UserDetails")
+extension DrawingRouter: SettingsNavigationDelegate {
+	
+	func settingsCloseDidTap() {
+		removePresenter(for: "Settings")
 	}
+	
+	func openSettingsWith(settings:Settings)
+	{
+		
+		let userDetailsPresenter = SettingDetailsViewPresenter(settings: settings, navigationDelegate: self)
+		userDetailsPresenter.present(in: parentViewController)
+		presenters["Settings"] = userDetailsPresenter
+	}
+
 }

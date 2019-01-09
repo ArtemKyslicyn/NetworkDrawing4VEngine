@@ -1,0 +1,6 @@
+framework module Pods_NetworkDrawing4VEngine {
+  umbrella header "Pods-NetworkDrawing4VEngine-umbrella.h"
+
+  export *
+  module * { export * }
+}

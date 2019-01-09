@@ -28,12 +28,12 @@ import UIKit
 
 extension UIViewController {
     func addFillerChildViewController(_ childController: UIViewController, toView: UIView? = nil) {
-        addChildViewController(childController)
+		addChild(childController)
         var parentView = childController.view
         if let toView = toView {
             parentView = toView
         }
         view.addFillerSubview(parentView!)
-        childController.didMove(toParentViewController: self)
+		childController.didMove(toParent: self)
     }
 }
