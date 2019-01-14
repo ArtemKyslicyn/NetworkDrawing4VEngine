@@ -1,11 +1,6 @@
 
 import UIKit
 
-// Delegate used to bind the UI and the View Model
-protocol UsersListViewModelDelegate: class {
-	func usersListUpdated()
-}
-
 
 final class DrawBoardViewModel {
     
@@ -58,7 +53,6 @@ final class DrawBoardViewModel {
 	
 	func clear()
 	{
-		//self.settings.color  = UIColor.blue
 		self.isDrawing = !self.isDrawing
 	}
 	

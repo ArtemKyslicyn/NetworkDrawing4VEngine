@@ -8,7 +8,6 @@
 
 final class SettingsViewModel {
     
-    //var userName: String
 	public var settings:Settings!
     private weak var navigationDelegate: SettingsNavigationDelegate?
     

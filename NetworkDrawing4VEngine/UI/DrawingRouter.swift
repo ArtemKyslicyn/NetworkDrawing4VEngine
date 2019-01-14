@@ -26,11 +26,6 @@
 
 import UIKit
 
-// Delegate used to navigate from users list to user details
-protocol UsersListNavigationDelegate: class {
-    func usersListSelected(for user: User)
-}
-
 // Delegate used to close the user details
 protocol DrawBoardNavigationDelegate: class {
 	func openSettingsWith(settings:Settings)
@@ -40,12 +35,6 @@ protocol SettingsNavigationDelegate: class {
 	func openSettingsWith(settings:Settings)
 	func settingsCloseDidTap()
 }
-
-
-//// Delegate used to close the user details
-//protocol SettingsNavigationDelegate: class {
-//	func settingsCloseDidTap()
-//}
 
 protocol BoardDrawNavigationDelegate: class {
 	func settingsCloseDidTap()

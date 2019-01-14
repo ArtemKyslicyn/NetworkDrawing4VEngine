@@ -10,5 +10,8 @@ import UIKit
 
 class DrawBoardInteractor {
 	
+	func sendFigure()  {
+		
+	}
 
 }

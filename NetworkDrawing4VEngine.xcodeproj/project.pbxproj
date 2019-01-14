@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2FDE4363244AFF223F003FD9 /* Pods_NetworkDrawing4VEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BFA6312B7DD128EB6BE5AD /* Pods_NetworkDrawing4VEngine.framework */; };
+		AC04EF9221EC3AD6001FFA7A /* Figure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04EF9121EC3AD6001FFA7A /* Figure.swift */; };
+		AC04EF9421EC3B25001FFA7A /* IObjectResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04EF9321EC3B25001FFA7A /* IObjectResponce.swift */; };
 		AC3A89862136C677001ADDDE /* DrawBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A897D2136C677001ADDDE /* DrawBoardViewModel.swift */; };
-		AC3A89872136C677001ADDDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A897E2136C677001ADDDE /* ViewController.swift */; };
 		AC3A89882136C677001ADDDE /* DrawBoardViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A89802136C677001ADDDE /* DrawBoardViewFactory.swift */; };
 		AC3A89892136C677001ADDDE /* DrawBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3A89822136C677001ADDDE /* DrawBoardViewController.swift */; };
 		AC3A898A2136C677001ADDDE /* DrawBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC3A89832136C677001ADDDE /* DrawBoardViewController.xib */; };
@@ -17,7 +18,6 @@
 		AC5338E12135211200D874C0 /* NetworkServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338DE2135211200D874C0 /* NetworkServer.swift */; };
 		AC5338E22135211200D874C0 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338DF2135211200D874C0 /* NetworkClient.swift */; };
 		AC5338E32135211200D874C0 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338E02135211200D874C0 /* NetworkConfig.swift */; };
-		AC5338E521352F9D00D874C0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338E421352F9D00D874C0 /* User.swift */; };
 		AC5338F02135A95000D874C0 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338E82135A95000D874C0 /* SettingsViewModel.swift */; };
 		AC5338F12135A95000D874C0 /* SettingsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338EA2135A95000D874C0 /* SettingsViewFactory.swift */; };
 		AC5338F22135A95000D874C0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338EC2135A95000D874C0 /* SettingsViewController.swift */; };
@@ -54,8 +54,9 @@
 		5E7BDA9F19BEB66134CBBF5C /* Pods-NetworkDrawing4VEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkDrawing4VEngine.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkDrawing4VEngine/Pods-NetworkDrawing4VEngine.release.xcconfig"; sourceTree = "<group>"; };
 		70BFA6312B7DD128EB6BE5AD /* Pods_NetworkDrawing4VEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkDrawing4VEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EAF53BE8758C176DEA3A4D /* Pods-NetworkDrawing4VEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkDrawing4VEngineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkDrawing4VEngineTests/Pods-NetworkDrawing4VEngineTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC04EF9121EC3AD6001FFA7A /* Figure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure.swift; sourceTree = "<group>"; };
+		AC04EF9321EC3B25001FFA7A /* IObjectResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IObjectResponce.swift; sourceTree = "<group>"; };
 		AC3A897D2136C677001ADDDE /* DrawBoardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawBoardViewModel.swift; sourceTree = "<group>"; };
-		AC3A897E2136C677001ADDDE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC3A89802136C677001ADDDE /* DrawBoardViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawBoardViewFactory.swift; sourceTree = "<group>"; };
 		AC3A89822136C677001ADDDE /* DrawBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawBoardViewController.swift; sourceTree = "<group>"; };
 		AC3A89832136C677001ADDDE /* DrawBoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawBoardViewController.xib; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		AC5338DE2135211200D874C0 /* NetworkServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServer.swift; sourceTree = "<group>"; };
 		AC5338DF2135211200D874C0 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		AC5338E02135211200D874C0 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
-		AC5338E421352F9D00D874C0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AC5338E82135A95000D874C0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		AC5338EA2135A95000D874C0 /* SettingsViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewFactory.swift; sourceTree = "<group>"; };
 		AC5338EC2135A95000D874C0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -216,7 +216,6 @@
 		AC5338F82136B18800D874C0 /* UIDrawingKit */ = {
 			isa = PBXGroup;
 			children = (
-				AC3A897E2136C677001ADDDE /* ViewController.swift */,
 				AC5338FD2136B2A600D874C0 /* ScribblableView.swift */,
 			);
 			path = UIDrawingKit;
@@ -327,8 +326,9 @@
 		ACCFB71B2134545500C54430 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AC5338E421352F9D00D874C0 /* User.swift */,
 				AC5338F52135AB6300D874C0 /* Settings.swift */,
+				AC04EF9121EC3AD6001FFA7A /* Figure.swift */,
+				AC04EF9321EC3B25001FFA7A /* IObjectResponce.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -537,8 +537,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "ruby generateEntityDiagram.rb\n";
 		};
 		B83CD7A4292BF0B98A7B167F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -582,22 +581,22 @@
 			files = (
 				AC5338F12135A95000D874C0 /* SettingsViewFactory.swift in Sources */,
 				ACCFB7172134486A00C54430 /* ViewPresenter.swift in Sources */,
+				AC04EF9221EC3AD6001FFA7A /* Figure.swift in Sources */,
 				AC5338E22135211200D874C0 /* NetworkClient.swift in Sources */,
 				AC7284F5213AAA070079EDA6 /* DrawBoardInteractor.swift in Sources */,
 				AC5338FC2136B24400D874C0 /* UIView.swift in Sources */,
 				AC5338FE2136B2A600D874C0 /* ScribblableView.swift in Sources */,
 				AC5338F62135AB6300D874C0 /* Settings.swift in Sources */,
-				AC5338E521352F9D00D874C0 /* User.swift in Sources */,
 				ACCFB70121343B4B00C54430 /* DrawingRouter.swift in Sources */,
 				AC3A89862136C677001ADDDE /* DrawBoardViewModel.swift in Sources */,
 				ACCFB7162134486A00C54430 /* Router.swift in Sources */,
 				AC3A89892136C677001ADDDE /* DrawBoardViewController.swift in Sources */,
 				AC5338F22135A95000D874C0 /* SettingsViewController.swift in Sources */,
 				AC5338F02135A95000D874C0 /* SettingsViewModel.swift in Sources */,
-				AC3A89872136C677001ADDDE /* ViewController.swift in Sources */,
 				AC5338E12135211200D874C0 /* NetworkServer.swift in Sources */,
 				ACCFB6C82134113C00C54430 /* AppDelegate.swift in Sources */,
 				AC5338F42135A95100D874C0 /* SettingsDetailsViewPresenter.swift in Sources */,
+				AC04EF9421EC3B25001FFA7A /* IObjectResponce.swift in Sources */,
 				AC3A898B2136C677001ADDDE /* DrawBoardViewPresenter.swift in Sources */,
 				AC5338E32135211200D874C0 /* NetworkConfig.swift in Sources */,
 				AC3A89882136C677001ADDDE /* DrawBoardViewFactory.swift in Sources */,

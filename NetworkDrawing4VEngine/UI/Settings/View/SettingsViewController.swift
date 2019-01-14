@@ -47,7 +47,7 @@ class SettingsViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// ColorPicker object used to set the color. Has methods to read and set the color
-		neatColorPicker.delegate = self as? ChromaColorPickerDelegate //ChromaColorPickerDelegate
+		neatColorPicker.delegate = self as? ChromaColorPickerDelegate 
 		neatColorPicker.padding = 5
 		neatColorPicker.stroke = 3
 		neatColorPicker.hexLabel.textColor = UIColor.black
