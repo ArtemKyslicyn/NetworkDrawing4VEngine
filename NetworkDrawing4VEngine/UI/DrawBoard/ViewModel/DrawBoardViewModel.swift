@@ -11,7 +11,8 @@ final class DrawBoardViewModel {
 	var swiped = false
 	var isDrawing = true
 	var timeout :Double = 15
-	
+	var points : [CGPoint] = [CGPoint]();
+	let pointsConverter = PointsFigureConverter()
 	
     private  var navigationDelegate: DrawBoardNavigationDelegate?
     
@@ -23,6 +24,8 @@ final class DrawBoardViewModel {
     }
 	
 	func drawLines(fromPoint:CGPoint,toPoint:CGPoint,frame:CGRect) -> UIImage? {
+		points.append(fromPoint)
+		points.append(toPoint)
 		let context = UIGraphicsGetCurrentContext()
 		context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y))
 		context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y))

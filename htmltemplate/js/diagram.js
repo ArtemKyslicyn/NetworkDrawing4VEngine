@@ -183,7 +183,7 @@ var entities =
 }
   ],
   "name": "SettingsViewController",
-  "superClass": 45
+  "superClass": 47
 },{
   "id": 4,
   "typeString": "class",
@@ -226,7 +226,7 @@ var entities =
 }
   ],
   "name": "DrawBoardNavigationDelegate",
-  "superClass": 46
+  "superClass": 48
 },{
   "id": 6,
   "typeString": "protocol",
@@ -243,7 +243,7 @@ var entities =
 }
   ],
   "name": "SettingsNavigationDelegate",
-  "superClass": 46
+  "superClass": 48
 },{
   "id": 7,
   "typeString": "protocol",
@@ -255,7 +255,7 @@ var entities =
 }
   ],
   "name": "BoardDrawNavigationDelegate",
-  "superClass": 46
+  "superClass": 48
 },{
   "id": 8,
   "typeString": "class",
@@ -300,7 +300,7 @@ var entities =
 }
   ],
   "name": "ViewPresenter",
-  "superClass": 46
+  "superClass": 48
 },{
   "id": 13,
   "typeString": "protocol",
@@ -317,7 +317,7 @@ var entities =
 }
   ],
   "name": "Router",
-  "superClass": 46
+  "superClass": 48
 },{
   "id": 14,
   "typeString": "class",
@@ -354,6 +354,16 @@ var entities =
 },
     {
   "name": "var timeout :Double",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
+  "name": "var points : [CGPoint]",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
+  "name": "let pointsConverter",
   "type": "instance",
   "accessLevel": "internal"
 },
@@ -404,6 +414,17 @@ var entities =
 },{
   "id": 15,
   "typeString": "class",
+  "methods": [
+    {
+  "name": "pointsToFigureConverter(points:[CGPoint]) -> Figure",
+  "type": "instance",
+  "accessLevel": "internal"
+}
+  ],
+  "name": "PointsFigureConverter"
+},{
+  "id": 16,
+  "typeString": "class",
   "properties": [
     {
   "name": "var viewModel: DrawBoardViewModel",
@@ -425,7 +446,7 @@ var entities =
   ],
   "name": "DrawBoardViewFactory"
 },{
-  "id": 16,
+  "id": 17,
   "typeString": "class",
   "properties": [
     {
@@ -507,9 +528,9 @@ var entities =
 }
   ],
   "name": "DrawBoardViewController",
-  "superClass": 45
+  "superClass": 47
 },{
-  "id": 17,
+  "id": 18,
   "typeString": "class",
   "properties": [
     {
@@ -540,18 +561,35 @@ var entities =
   ],
   "name": "DrawBoardViewPresenter"
 },{
-  "id": 18,
+  "id": 19,
   "typeString": "class",
+  "properties": [
+    {
+  "name": "let networkingClinet:NetworkClientClient",
+  "type": "instance",
+  "accessLevel": "private"
+},
+    {
+  "name": "let networkingServer:NetworkServer",
+  "type": "instance",
+  "accessLevel": "private"
+},
+    {
+  "name": "let figureConverter:FigureConverter",
+  "type": "instance",
+  "accessLevel": "private"
+}
+  ],
   "methods": [
     {
-  "name": "sendFigure()",
+  "name": "sendFigure(figure:Figure)",
   "type": "instance",
   "accessLevel": "internal"
 }
   ],
   "name": "DrawBoardInteractor"
 },{
-  "id": 19,
+  "id": 20,
   "typeString": "protocol",
   "methods": [
     {
@@ -561,9 +599,9 @@ var entities =
 }
   ],
   "name": "SettingsViewControllerDelegate",
-  "superClass": 46
+  "superClass": 48
 },{
-  "id": 20,
+  "id": 21,
   "typeString": "class",
   "properties": [
     {
@@ -680,9 +718,9 @@ var entities =
 }
   ],
   "name": "SettingsViewController",
-  "superClass": 45
+  "superClass": 47
 },{
-  "id": 21,
+  "id": 22,
   "typeString": "protocol",
   "methods": [
     {
@@ -708,7 +746,7 @@ var entities =
   ],
   "name": "Scribblable"
 },{
-  "id": 22,
+  "id": 23,
   "typeString": "class",
   "properties": [
     {
@@ -735,9 +773,9 @@ var entities =
 }
   ],
   "name": "ScribbleView",
-  "superClass": 47
+  "superClass": 49
 },{
-  "id": 23,
+  "id": 24,
   "typeString": "class",
   "properties": [
     {
@@ -769,9 +807,9 @@ var entities =
 }
   ],
   "name": "SimpleScribbleView",
-  "superClass": 22
+  "superClass": 23
 },{
-  "id": 24,
+  "id": 25,
   "typeString": "class",
   "properties": [
     {
@@ -808,9 +846,9 @@ var entities =
 }
   ],
   "name": "HermiteScribbleView",
-  "superClass": 22
+  "superClass": 23
 },{
-  "id": 25,
+  "id": 26,
   "typeString": "class",
   "properties": [
     {
@@ -857,12 +895,12 @@ var entities =
 }
   ],
   "protocols": [
-    49
+    51
   ],
   "name": "AppDelegate",
-  "superClass": 48
+  "superClass": 50
 },{
-  "id": 26,
+  "id": 27,
   "typeString": "class",
   "properties": [
     {
@@ -876,7 +914,7 @@ var entities =
   "accessLevel": "internal"
 },
     {
-  "name": "var controller: UIViewController!",
+  "name": "var controller: UIViewController! convenience",
   "type": "instance",
   "accessLevel": "internal"
 }
@@ -893,6 +931,16 @@ var entities =
   "accessLevel": "internal"
 },
     {
+  "name": "init()",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
+  "name": "init(usingQueue queue: DispatchQueue)",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
   "name": "init(withViewController controller: UIViewController, usingQueue queue: DispatchQueue)",
   "type": "instance",
   "accessLevel": "internal"
@@ -900,7 +948,7 @@ var entities =
   ],
   "name": "NetworkClientClient"
 },{
-  "id": 27,
+  "id": 28,
   "typeString": "class",
   "properties": [
     {
@@ -931,6 +979,16 @@ var entities =
   "accessLevel": "internal"
 },
     {
+  "name": "init()",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
+  "name": "init(usingQueue queue: DispatchQueue)",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
   "name": "init(withViewController controller: UIViewController, usingQueue queue: DispatchQueue)",
   "type": "instance",
   "accessLevel": "internal"
@@ -938,7 +996,18 @@ var entities =
   ],
   "name": "NetworkServer"
 },{
-  "id": 28,
+  "id": 29,
+  "typeString": "class",
+  "methods": [
+    {
+  "name": "convertFigureToData(figure:Figure) -> Data",
+  "type": "instance",
+  "accessLevel": "internal"
+}
+  ],
+  "name": "FigureConverter"
+},{
+  "id": 30,
   "typeString": "class",
   "properties": [
     {
@@ -974,7 +1043,7 @@ var entities =
   ],
   "name": "Settings"
 },{
-  "id": 29,
+  "id": 31,
   "typeString": "struct",
   "properties": [
     {
@@ -996,11 +1065,11 @@ var entities =
 }
   ],
   "protocols": [
-    31
+    33
   ],
   "name": "Point"
 },{
-  "id": 30,
+  "id": 32,
   "typeString": "struct",
   "properties": [
     {
@@ -1017,15 +1086,15 @@ var entities =
 }
   ],
   "protocols": [
-    31
+    33
   ],
   "name": "Figure"
 },{
-  "id": 31,
+  "id": 33,
   "typeString": "protocol",
   "name": "IObjectResponce"
 },{
-  "id": 32,
+  "id": 34,
   "typeString": "class",
   "properties": [
     {
@@ -1052,9 +1121,9 @@ var entities =
 }
   ],
   "name": "ChromaSliderTrackLayer",
-  "superClass": 50
+  "superClass": 52
 },{
-  "id": 33,
+  "id": 35,
   "typeString": "protocol",
   "methods": [
     {
@@ -1065,7 +1134,7 @@ var entities =
   ],
   "name": "ChromaShadeSliderDelegate"
 },{
-  "id": 34,
+  "id": 36,
   "typeString": "class",
   "properties": [
     {
@@ -1187,9 +1256,9 @@ var entities =
 }
   ],
   "name": "ChromaShadeSlider",
-  "superClass": 51
+  "superClass": 53
 },{
-  "id": 36,
+  "id": 38,
   "typeString": "protocol",
   "methods": [
     {
@@ -1200,7 +1269,7 @@ var entities =
   ],
   "name": "ChromaColorPickerDelegate"
 },{
-  "id": 37,
+  "id": 39,
   "typeString": "enum",
   "cases": [
     {
@@ -1209,7 +1278,7 @@ var entities =
   ],
   "name": "ColorSpace"
 },{
-  "id": 38,
+  "id": 40,
   "typeString": "class",
   "properties": [
     {
@@ -1436,15 +1505,15 @@ var entities =
 }
   ],
   "name": "ChromaColorPicker",
-  "superClass": 51,
+  "superClass": 53,
   "containedEntities": [
-    37
+    39
   ],
   "extensions": [
-    39
+    41
   ]
 },{
-  "id": 40,
+  "id": 42,
   "typeString": "enum",
   "cases": [
     {
@@ -1453,7 +1522,7 @@ var entities =
   ],
   "name": "ColorState"
 },{
-  "id": 41,
+  "id": 43,
   "typeString": "class",
   "properties": [
     {
@@ -1540,12 +1609,12 @@ var entities =
 }
   ],
   "name": "ColorModeToggleButton",
-  "superClass": 52,
+  "superClass": 54,
   "containedEntities": [
-    40
+    42
   ]
 },{
-  "id": 42,
+  "id": 44,
   "typeString": "class",
   "properties": [
     {
@@ -1592,9 +1661,9 @@ var entities =
 }
   ],
   "name": "ChromaHandle",
-  "superClass": 53
+  "superClass": 55
 },{
-  "id": 43,
+  "id": 45,
   "typeString": "class",
   "properties": [
     {
@@ -1651,9 +1720,9 @@ var entities =
 }
   ],
   "name": "ChromaAddButton",
-  "superClass": 52
+  "superClass": 54
 },{
-  "id": 44,
+  "id": 46,
   "typeString": "class",
   "methods": [
     {
@@ -1678,53 +1747,53 @@ var entities =
 }
   ],
   "name": "NetworkDrawing4VEngineTests",
-  "superClass": 54
-},{
-  "id": 45,
-  "typeString": "class",
-  "name": "UIViewController"
-},{
-  "id": 46,
-  "typeString": "class",
-  "name": "class"
+  "superClass": 56
 },{
   "id": 47,
   "typeString": "class",
-  "name": "UIImageView"
+  "name": "UIViewController"
 },{
   "id": 48,
   "typeString": "class",
-  "name": "UIResponder"
+  "name": "class"
 },{
   "id": 49,
-  "typeString": "protocol",
-  "name": "UIApplicationDelegate"
+  "typeString": "class",
+  "name": "UIImageView"
 },{
   "id": 50,
   "typeString": "class",
-  "name": "CALayer"
+  "name": "UIResponder"
 },{
   "id": 51,
-  "typeString": "class",
-  "name": "UIControl"
+  "typeString": "protocol",
+  "name": "UIApplicationDelegate"
 },{
   "id": 52,
   "typeString": "class",
-  "name": "UIButton"
+  "name": "CALayer"
 },{
   "id": 53,
   "typeString": "class",
-  "name": "UIView"
+  "name": "UIControl"
 },{
   "id": 54,
   "typeString": "class",
-  "name": "XCTestCase"
+  "name": "UIButton"
 },{
   "id": 55,
   "typeString": "class",
+  "name": "UIView"
+},{
+  "id": 56,
+  "typeString": "class",
+  "name": "XCTestCase"
+},{
+  "id": 57,
+  "typeString": "class",
   "name": "UIColor",
   "extensions": [
-    35
+    37
   ]
 },{
   "id": 9,
@@ -1774,7 +1843,7 @@ var entities =
     6
   ]
 },{
-  "id": 35,
+  "id": 37,
   "typeString": "extension",
   "properties": [
     {
@@ -1806,7 +1875,7 @@ var entities =
 }
   ]
 },{
-  "id": 39,
+  "id": 41,
   "typeString": "extension",
   "methods": [
     {
@@ -1816,7 +1885,7 @@ var entities =
 }
   ],
   "protocols": [
-    33
+    35
   ]
 }]
 ;

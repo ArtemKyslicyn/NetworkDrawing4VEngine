@@ -28,6 +28,8 @@
 		AC5338FC2136B24400D874C0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338FA2136B24400D874C0 /* UIView.swift */; };
 		AC5338FE2136B2A600D874C0 /* ScribblableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5338FD2136B2A600D874C0 /* ScribblableView.swift */; };
 		AC5339002136B97400D874C0 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5338FF2136B97400D874C0 /* Network.framework */; };
+		AC68437121ED8D700002B6CB /* FigureConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68437021ED8D700002B6CB /* FigureConverter.swift */; };
+		AC68437321ED91EA0002B6CB /* PointsFigureConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC68437221ED91EA0002B6CB /* PointsFigureConverter.swift */; };
 		AC7284F5213AAA070079EDA6 /* DrawBoardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7284F4213AAA070079EDA6 /* DrawBoardInteractor.swift */; };
 		ACCFB6C82134113C00C54430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCFB6C72134113C00C54430 /* AppDelegate.swift */; };
 		ACCFB6CD2134113D00C54430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCFB6CB2134113D00C54430 /* Main.storyboard */; };
@@ -74,6 +76,8 @@
 		AC5338FA2136B24400D874C0 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		AC5338FD2136B2A600D874C0 /* ScribblableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScribblableView.swift; sourceTree = "<group>"; };
 		AC5338FF2136B97400D874C0 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		AC68437021ED8D700002B6CB /* FigureConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FigureConverter.swift; sourceTree = "<group>"; };
+		AC68437221ED91EA0002B6CB /* PointsFigureConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsFigureConverter.swift; sourceTree = "<group>"; };
 		AC7284F4213AAA070079EDA6 /* DrawBoardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBoardInteractor.swift; sourceTree = "<group>"; };
 		ACCFB6C42134113C00C54430 /* NetworkDrawing4VEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkDrawing4VEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCFB6C72134113C00C54430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 		AC3A897C2136C677001ADDDE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AC68437221ED91EA0002B6CB /* PointsFigureConverter.swift */,
 				AC3A897D2136C677001ADDDE /* DrawBoardViewModel.swift */,
 			);
 			path = ViewModel;
@@ -336,6 +341,7 @@
 		ACE0FE2D2175BF8700D36164 /* Converters */ = {
 			isa = PBXGroup;
 			children = (
+				AC68437021ED8D700002B6CB /* FigureConverter.swift */,
 			);
 			path = Converters;
 			sourceTree = "<group>";
@@ -582,6 +588,8 @@
 				AC5338F12135A95000D874C0 /* SettingsViewFactory.swift in Sources */,
 				ACCFB7172134486A00C54430 /* ViewPresenter.swift in Sources */,
 				AC04EF9221EC3AD6001FFA7A /* Figure.swift in Sources */,
+				AC68437121ED8D700002B6CB /* FigureConverter.swift in Sources */,
+				AC68437321ED91EA0002B6CB /* PointsFigureConverter.swift in Sources */,
 				AC5338E22135211200D874C0 /* NetworkClient.swift in Sources */,
 				AC7284F5213AAA070079EDA6 /* DrawBoardInteractor.swift in Sources */,
 				AC5338FC2136B24400D874C0 /* UIView.swift in Sources */,

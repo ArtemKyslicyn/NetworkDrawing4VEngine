@@ -10,8 +10,16 @@ import UIKit
 
 class DrawBoardInteractor {
 	
-	func sendFigure()  {
+	private  let networkingClinet:NetworkClientClient = NetworkClientClient()
+	private  let networkingServer:NetworkServer =  NetworkServer()
+	private  let figureConverter:FigureConverter = FigureConverter()
+	
+	func sendFigure(figure:Figure)  {
 		
+		let dataFigure = figureConverter.convertFigureToData(figure: figure)
+		networkingClinet.send(frame: dataFigure)
 	}
+	
+	
 
 }

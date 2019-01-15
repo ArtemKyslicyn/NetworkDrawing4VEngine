@@ -17,7 +17,53 @@ class NetworkServer {
     var queue: DispatchQueue
     weak var controller: UIViewController!
     var frame = Data()
-    
+	
+	convenience init() {
+		self.init(usingQueue: DispatchQueue(label: "server"))
+	}
+	
+	init(usingQueue queue: DispatchQueue) {
+		
+		self.queue = queue
+		
+		listener = try! NWListener(using: NetworkParameters, on: NetworkPort)
+		listener.service = NWListener.Service(name: NetworkServiceName, type: NetworkServiceType)
+		listener.serviceRegistrationUpdateHandler = { serviceChange in
+			switch serviceChange {
+			case .add(let endpoint):
+				switch endpoint {
+				case .service(let name, _, _, _):
+					print("listening \(name)")
+				default:
+					break;
+				}
+			default:
+				break;
+			}
+		}
+		
+		listener.newConnectionHandler = { [weak self] newConnection in
+			if let strongSelf = self {
+				print("new connection")
+				newConnection.start(queue: strongSelf.queue)
+				strongSelf.recieve(on: newConnection)
+			}
+		}
+		
+		listener.stateUpdateHandler = { [weak self] state in
+			switch state {
+			case .ready:
+				print("listening on port \(String(describing: self?.listener.port))")
+			case .failed(let error):
+				print("failed with error: \(error)")
+			default:
+				break
+			}
+		}
+		
+		listener.start(queue: queue)
+	}
+	
     init(withViewController controller: UIViewController, usingQueue queue: DispatchQueue) {
         self.controller = controller
         self.queue = queue

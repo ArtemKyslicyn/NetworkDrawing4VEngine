@@ -14,7 +14,32 @@ class NetworkClientClient {
     var connection: NWConnection
     var queue: DispatchQueue
     weak var controller: UIViewController!
-    
+	
+	convenience init() {
+		self.init(usingQueue: DispatchQueue(label: "client"))
+	}
+	
+	init(usingQueue queue: DispatchQueue) {
+		
+		self.queue = queue
+		
+		//        connection = NWConnection(host: "10.42.72.5", port: NetworkPort, using: NetworkParameters)
+		connection = NWConnection(to: NWEndpoint.service(name: NetworkServiceName, type: NetworkServiceType, domain: "local", interface: nil), using: NetworkParameters)
+		
+		connection.stateUpdateHandler = { state in
+			switch state {
+			case .ready:
+				print("client ready")
+			case .failed(let error):
+				print("client failed: \(error)")
+			default:
+				break
+			}
+		}
+		
+		connection.start(queue: queue)
+	}
+	
     init(withViewController controller: UIViewController, usingQueue queue: DispatchQueue) {
         self.controller = controller
         self.queue = queue
