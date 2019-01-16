@@ -23,9 +23,18 @@ final class DrawBoardViewModel {
 		clearTimer = Timer.scheduledTimer(timeInterval: self.timeout, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
     }
 	
-	func drawLines(fromPoint:CGPoint,toPoint:CGPoint,frame:CGRect) -> UIImage? {
+	func sendFigure(fromPoint:CGPoint,toPoint:CGPoint)
+	{
 		points.append(fromPoint)
 		points.append(toPoint)
+		let figure = pointsConverter.pointsToFigureConverter(points: points)
+		self.interactor.sendFigure(figure: figure)
+	}
+	
+	func drawLines(fromPoint:CGPoint,toPoint:CGPoint,frame:CGRect) -> UIImage? {
+		
+		self.sendFigure(fromPoint: fromPoint, toPoint: toPoint);
+		
 		let context = UIGraphicsGetCurrentContext()
 		context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y))
 		context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y))
