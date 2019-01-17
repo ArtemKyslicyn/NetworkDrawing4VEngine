@@ -13,6 +13,15 @@ class DrawBoardInteractor {
 	private  let networkingClinet:NetworkClientClient = NetworkClientClient()
 	private  let networkingServer:NetworkServer =  NetworkServer()
 	private  let figureConverter:FigureConverter = FigureConverter()
+	public   var reciveFigure :((Figure) -> ())?
+	
+	init() {
+		
+		networkingServer.recivedDataPacket = { data in
+			let figure = self.figureConverter.convertDataToFigure(data: data)
+			self.reciveFigure?(figure)
+		}
+	}
 	
 	func sendFigure(figure:Figure)  {
 		

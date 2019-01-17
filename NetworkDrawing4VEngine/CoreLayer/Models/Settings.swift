@@ -15,5 +15,6 @@ class Settings {
 	var timeInterval:Double = 15
 	var onlyStylus:Bool = false
 	var smoothLine = true
+	var isReciveData:Bool = false;
 }
 

@@ -13,10 +13,11 @@ import UIKit
 
 class NetworkServer {
     
-    var listener: NWListener
-    var queue: DispatchQueue
-    weak var controller: UIViewController!
-    var frame = Data()
+    private var listener: NWListener
+    private var queue: DispatchQueue
+    private var frame = Data()
+	
+	public var recivedDataPacket:((Data)->())?
 	
 	convenience init() {
 		self.init(usingQueue: DispatchQueue(label: "server"))
@@ -65,7 +66,7 @@ class NetworkServer {
 	}
 	
     init(withViewController controller: UIViewController, usingQueue queue: DispatchQueue) {
-        self.controller = controller
+       // self.controller = controller
         self.queue = queue
         
 		listener = try! NWListener(using: NetworkParameters, on: NetworkPort)
@@ -112,11 +113,16 @@ class NetworkServer {
                 if let frame = content {
                     
                     self.frame.append(frame)
-                    
+					
                     if (frame.count < NetworkFrameSize) {
                         //self.controller.recieved(frame: self.frame)
                         self.frame = Data()
                     }
+					
+					if isComplete
+					{
+						self.recivedDataPacket?(self.frame)
+					}
 
                     if error == nil {
                         self.recieve(on: connection)

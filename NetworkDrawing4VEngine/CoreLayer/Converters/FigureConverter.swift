@@ -14,4 +14,8 @@ class FigureConverter {
 	func convertFigureToData(figure:Figure) -> Data {
 		return Data();
 	}
+	
+	func convertDataToFigure(data:Data) -> Figure {
+		return Figure(array: [])
+	}
 }

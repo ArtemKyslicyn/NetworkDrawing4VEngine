@@ -375,6 +375,11 @@ var entities =
   ],
   "methods": [
     {
+  "name": "sendFigure(fromPoint:CGPoint,toPoint:CGPoint)",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
   "name": "drawLines(fromPoint:CGPoint,toPoint:CGPoint,frame:CGRect) -> UIImage?",
   "type": "instance",
   "accessLevel": "internal"
@@ -578,11 +583,21 @@ var entities =
   "name": "let figureConverter:FigureConverter",
   "type": "instance",
   "accessLevel": "private"
+},
+    {
+  "name": "var reciveFigure :((Figure) -> ())?",
+  "type": "instance",
+  "accessLevel": "public"
 }
   ],
   "methods": [
     {
   "name": "sendFigure(figure:Figure)",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
+  "name": "init()",
   "type": "instance",
   "accessLevel": "internal"
 }
@@ -954,22 +969,22 @@ var entities =
     {
   "name": "var listener: NWListener",
   "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "private"
 },
     {
   "name": "var queue: DispatchQueue",
   "type": "instance",
-  "accessLevel": "internal"
-},
-    {
-  "name": "var controller: UIViewController!",
-  "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "private"
 },
     {
   "name": "var frame",
   "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "private"
+},
+    {
+  "name": "var recivedDataPacket:((Data)->())? convenience",
+  "type": "instance",
+  "accessLevel": "public"
 }
   ],
   "methods": [
@@ -1001,6 +1016,11 @@ var entities =
   "methods": [
     {
   "name": "convertFigureToData(figure:Figure) -> Data",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
+  "name": "convertDataToFigure(data:Data) -> Figure",
   "type": "instance",
   "accessLevel": "internal"
 }
@@ -1037,6 +1057,11 @@ var entities =
 },
     {
   "name": "var smoothLine",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
+  "name": "var isReciveData:Bool",
   "type": "instance",
   "accessLevel": "internal"
 }
