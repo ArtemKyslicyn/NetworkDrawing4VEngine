@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Point : IObjectResponce {
+struct Point : IObjectResponce , Codable {
 	let x:Double
 	let y:Double
 	
@@ -19,9 +19,27 @@ struct Point : IObjectResponce {
 	}
 }
 
-struct Figure : IObjectResponce {
+struct Figure : IObjectResponce , Codable{
 	let array : [Point]
 	
+	enum CodingKeys : String, CodingKey {
+		case name
+		case abv = "alcohol_by_volume"
+		case brewery = "brewery_name"
+		case style
+	}
+	
+	 init(from decoder:Decoder) throws {
+		let values = try decoder.container(keyedBy: CodingKeys.self)
+//		indexPath = try values.decode([Int].self, forKey: .indexPath)
+	//	locationInText = try values.decode(Int.self, forKey: .locationInText)
+	}
+	
+	init(from decoder:Encoder) throws {
+				let values = try decoder.container(keyedBy: CodingKeys.self)
+		//		indexPath = try values.decode([Int].self, forKey: .indexPath)
+		//	locationInText = try values.decode(Int.self, forKey: .locationInText)
+	}
 	init(array : [Point]) {
 		self.array = array
 	}
