@@ -23,19 +23,16 @@ struct Figure : IObjectResponce , Codable{
 	let array : [Point]
 	
 	enum CodingKeys : String, CodingKey {
-		case name
-		case abv = "alcohol_by_volume"
-		case brewery = "brewery_name"
-		case style
+		case array
 	}
 	
 	 init(from decoder:Decoder) throws {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
-//		indexPath = try values.decode([Int].self, forKey: .indexPath)
+		array = try values.decode([Point].self, forKey: .array)
 	//	locationInText = try values.decode(Int.self, forKey: .locationInText)
 	}
 	
-	init(from decoder:Encoder) throws {
+	init(from encoder:Encoder) throws {
 				let values = try decoder.container(keyedBy: CodingKeys.self)
 		//		indexPath = try values.decode([Int].self, forKey: .indexPath)
 		//	locationInText = try values.decode(Int.self, forKey: .locationInText)
