@@ -183,7 +183,7 @@ var entities =
 }
   ],
   "name": "SettingsViewController",
-  "superClass": 47
+  "superClass": 48
 },{
   "id": 4,
   "typeString": "class",
@@ -226,7 +226,7 @@ var entities =
 }
   ],
   "name": "DrawBoardNavigationDelegate",
-  "superClass": 48
+  "superClass": 49
 },{
   "id": 6,
   "typeString": "protocol",
@@ -243,7 +243,7 @@ var entities =
 }
   ],
   "name": "SettingsNavigationDelegate",
-  "superClass": 48
+  "superClass": 49
 },{
   "id": 7,
   "typeString": "protocol",
@@ -255,7 +255,7 @@ var entities =
 }
   ],
   "name": "BoardDrawNavigationDelegate",
-  "superClass": 48
+  "superClass": 49
 },{
   "id": 8,
   "typeString": "class",
@@ -300,7 +300,7 @@ var entities =
 }
   ],
   "name": "ViewPresenter",
-  "superClass": 48
+  "superClass": 49
 },{
   "id": 13,
   "typeString": "protocol",
@@ -317,7 +317,7 @@ var entities =
 }
   ],
   "name": "Router",
-  "superClass": 48
+  "superClass": 49
 },{
   "id": 14,
   "typeString": "class",
@@ -533,7 +533,7 @@ var entities =
 }
   ],
   "name": "DrawBoardViewController",
-  "superClass": 47
+  "superClass": 48
 },{
   "id": 18,
   "typeString": "class",
@@ -614,7 +614,7 @@ var entities =
 }
   ],
   "name": "SettingsViewControllerDelegate",
-  "superClass": 48
+  "superClass": 49
 },{
   "id": 21,
   "typeString": "class",
@@ -733,7 +733,7 @@ var entities =
 }
   ],
   "name": "SettingsViewController",
-  "superClass": 47
+  "superClass": 48
 },{
   "id": 22,
   "typeString": "protocol",
@@ -788,7 +788,7 @@ var entities =
 }
   ],
   "name": "ScribbleView",
-  "superClass": 49
+  "superClass": 50
 },{
   "id": 24,
   "typeString": "class",
@@ -910,10 +910,10 @@ var entities =
 }
   ],
   "protocols": [
-    51
+    52
   ],
   "name": "AppDelegate",
-  "superClass": 50
+  "superClass": 51
 },{
   "id": 27,
   "typeString": "class",
@@ -1090,11 +1090,24 @@ var entities =
 }
   ],
   "protocols": [
-    33
+    34
   ],
   "name": "Point"
 },{
   "id": 32,
+  "typeString": "enum",
+  "protocols": [
+    54
+  ],
+  "cases": [
+    {
+  "name": "array"
+}
+  ],
+  "name": "CodingKeys",
+  "superClass": 53
+},{
+  "id": 33,
   "typeString": "struct",
   "properties": [
     {
@@ -1105,21 +1118,29 @@ var entities =
   ],
   "methods": [
     {
+  "name": "init(from decoder:Decoder) throws",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
   "name": "init(array : [Point])",
   "type": "instance",
   "accessLevel": "internal"
 }
   ],
   "protocols": [
-    33
+    34
   ],
-  "name": "Figure"
+  "name": "Figure",
+  "containedEntities": [
+    32
+  ]
 },{
-  "id": 33,
+  "id": 34,
   "typeString": "protocol",
   "name": "IObjectResponce"
 },{
-  "id": 34,
+  "id": 35,
   "typeString": "class",
   "properties": [
     {
@@ -1146,9 +1167,9 @@ var entities =
 }
   ],
   "name": "ChromaSliderTrackLayer",
-  "superClass": 52
+  "superClass": 55
 },{
-  "id": 35,
+  "id": 36,
   "typeString": "protocol",
   "methods": [
     {
@@ -1159,7 +1180,7 @@ var entities =
   ],
   "name": "ChromaShadeSliderDelegate"
 },{
-  "id": 36,
+  "id": 37,
   "typeString": "class",
   "properties": [
     {
@@ -1281,9 +1302,9 @@ var entities =
 }
   ],
   "name": "ChromaShadeSlider",
-  "superClass": 53
+  "superClass": 56
 },{
-  "id": 38,
+  "id": 39,
   "typeString": "protocol",
   "methods": [
     {
@@ -1294,7 +1315,7 @@ var entities =
   ],
   "name": "ChromaColorPickerDelegate"
 },{
-  "id": 39,
+  "id": 40,
   "typeString": "enum",
   "cases": [
     {
@@ -1303,7 +1324,7 @@ var entities =
   ],
   "name": "ColorSpace"
 },{
-  "id": 40,
+  "id": 41,
   "typeString": "class",
   "properties": [
     {
@@ -1530,15 +1551,15 @@ var entities =
 }
   ],
   "name": "ChromaColorPicker",
-  "superClass": 53,
+  "superClass": 56,
   "containedEntities": [
-    39
+    40
   ],
   "extensions": [
-    41
+    42
   ]
 },{
-  "id": 42,
+  "id": 43,
   "typeString": "enum",
   "cases": [
     {
@@ -1547,7 +1568,7 @@ var entities =
   ],
   "name": "ColorState"
 },{
-  "id": 43,
+  "id": 44,
   "typeString": "class",
   "properties": [
     {
@@ -1634,12 +1655,12 @@ var entities =
 }
   ],
   "name": "ColorModeToggleButton",
-  "superClass": 54,
+  "superClass": 57,
   "containedEntities": [
-    42
+    43
   ]
 },{
-  "id": 44,
+  "id": 45,
   "typeString": "class",
   "properties": [
     {
@@ -1686,9 +1707,9 @@ var entities =
 }
   ],
   "name": "ChromaHandle",
-  "superClass": 55
+  "superClass": 58
 },{
-  "id": 45,
+  "id": 46,
   "typeString": "class",
   "properties": [
     {
@@ -1745,9 +1766,9 @@ var entities =
 }
   ],
   "name": "ChromaAddButton",
-  "superClass": 54
+  "superClass": 57
 },{
-  "id": 46,
+  "id": 47,
   "typeString": "class",
   "methods": [
     {
@@ -1772,53 +1793,61 @@ var entities =
 }
   ],
   "name": "NetworkDrawing4VEngineTests",
-  "superClass": 56
-},{
-  "id": 47,
-  "typeString": "class",
-  "name": "UIViewController"
+  "superClass": 59
 },{
   "id": 48,
   "typeString": "class",
-  "name": "class"
+  "name": "UIViewController"
 },{
   "id": 49,
   "typeString": "class",
-  "name": "UIImageView"
+  "name": "class"
 },{
   "id": 50,
   "typeString": "class",
-  "name": "UIResponder"
+  "name": "UIImageView"
 },{
   "id": 51,
+  "typeString": "class",
+  "name": "UIResponder"
+},{
+  "id": 52,
   "typeString": "protocol",
   "name": "UIApplicationDelegate"
 },{
-  "id": 52,
-  "typeString": "class",
-  "name": "CALayer"
-},{
   "id": 53,
   "typeString": "class",
-  "name": "UIControl"
+  "name": "String"
 },{
   "id": 54,
-  "typeString": "class",
-  "name": "UIButton"
+  "typeString": "protocol",
+  "name": "CodingKey"
 },{
   "id": 55,
   "typeString": "class",
-  "name": "UIView"
+  "name": "CALayer"
 },{
   "id": 56,
   "typeString": "class",
-  "name": "XCTestCase"
+  "name": "UIControl"
 },{
   "id": 57,
   "typeString": "class",
+  "name": "UIButton"
+},{
+  "id": 58,
+  "typeString": "class",
+  "name": "UIView"
+},{
+  "id": 59,
+  "typeString": "class",
+  "name": "XCTestCase"
+},{
+  "id": 60,
+  "typeString": "class",
   "name": "UIColor",
   "extensions": [
-    37
+    38
   ]
 },{
   "id": 9,
@@ -1868,7 +1897,7 @@ var entities =
     6
   ]
 },{
-  "id": 37,
+  "id": 38,
   "typeString": "extension",
   "properties": [
     {
@@ -1900,7 +1929,7 @@ var entities =
 }
   ]
 },{
-  "id": 41,
+  "id": 42,
   "typeString": "extension",
   "methods": [
     {
@@ -1910,7 +1939,7 @@ var entities =
 }
   ],
   "protocols": [
-    35
+    36
   ]
 }]
 ;
