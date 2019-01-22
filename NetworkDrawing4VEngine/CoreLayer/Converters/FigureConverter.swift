@@ -12,16 +12,16 @@ import Foundation
 class FigureConverter {
 	
 	func convertFigureToData(figure:Figure) -> Data {
-		//let jsonData = jsonString.data(encoding: .utf8)!
-		return Data();
+		let jsonEncoder =  JSONEncoder()
+		let jsonData = try? jsonEncoder.encode(figure)
+		return jsonData ?? Data();
 	}
 	
 	func convertDataToFigure(data:Data) -> Figure {
 		let jsonString = String(decoding: data, as: UTF8.self)
 		let jsonData = jsonString.data(using: .utf8)!
 		let decoder = JSONDecoder()
-		let beer = try! decoder.decode(Figure.self, from: jsonData)
-		
-		return Figure(array: [])
+		let figure = try! decoder.decode(Figure.self, from: jsonData)
+		return figure
 	}
 }
