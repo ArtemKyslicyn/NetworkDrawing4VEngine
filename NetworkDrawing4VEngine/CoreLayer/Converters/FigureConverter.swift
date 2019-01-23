@@ -14,6 +14,7 @@ class FigureConverter {
 	func convertFigureToData(figure:Figure) -> Data {
 		let jsonEncoder =  JSONEncoder()
 		let jsonData = try? jsonEncoder.encode(figure)
+		print("Sending data \(String(decoding: jsonData ?? Data(), as: UTF8.self))")
 		return jsonData ?? Data();
 	}
 	

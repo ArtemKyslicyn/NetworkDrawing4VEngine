@@ -12,7 +12,13 @@ import UIKit
 class PointsFigureConverter{
 	func pointsToFigureConverter(points:[CGPoint]) -> Figure
 	{
-		return Figure(array: [])
+		var pointsArray = [Point]()
+		for point in points
+		{
+			pointsArray.append(Point(x: Double(point.x), y: Double(point.y)))
+		}
+		
+		return Figure(array:pointsArray)
 	}
 	
 }

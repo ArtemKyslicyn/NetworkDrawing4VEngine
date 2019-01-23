@@ -91,6 +91,7 @@ class DrawBoardViewController: UIViewController {
 				{
 					let currentPoint = touch.location(in: self.view)
 					self.canvasImageView.image = viewModel.drawLines(fromPoint: viewModel.lastPoint, toPoint: currentPoint, frame: self.view.frame)
+		
 				    viewModel.lastPoint = currentPoint
 					
 				}
@@ -106,11 +107,14 @@ class DrawBoardViewController: UIViewController {
 			}
 			if touch.type == .stylus || !viewModel.settings.onlyStylus
 			{
+				let currentPoint = touch.location(in: self.view)
+				viewModel.sendFigure(fromPoint:viewModel.lastPoint,toPoint:currentPoint)
 				coalescedTouches.forEach
 					{
 						canvasImageView.appendScribble(point: $0.location(in: canvasImageView))
 						
 				}
+				viewModel.lastPoint = currentPoint
 			}
 		}
 	}
