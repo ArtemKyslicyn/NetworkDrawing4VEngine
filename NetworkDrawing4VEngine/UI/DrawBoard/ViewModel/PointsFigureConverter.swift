@@ -21,4 +21,16 @@ class PointsFigureConverter{
 		return Figure(array:pointsArray)
 	}
 	
+	func figureToPointsConverter(figure:Figure) -> [CGPoint]
+	{
+		var pointsArray = [CGPoint]()
+		
+		for point in figure.array
+		{
+			pointsArray.append(CGPoint(x: point.x, y: point.y))
+		}
+		
+		return pointsArray
+	}
+	
 }

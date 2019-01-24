@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
-            timestampString = "569910408.571113"
+            timestampString = "569996967.106567"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
-            timestampString = "569910408.571297"
+            timestampString = "569996967.1087821"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -154,12 +154,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/ViewModel/DrawBoardViewModel.swift"
-            timestampString = "569908422.415087"
+            timestampString = "569996967.110375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "sendFigure(fromPoint:toPoint:)"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "getFigure(figure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
-            timestampString = "569910408.5716929"
+            timestampString = "569996967.111194"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
-            timestampString = "569910408.5718859"
+            timestampString = "569996967.111899"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -202,28 +202,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/ViewModel/DrawBoardViewModel.swift"
-            timestampString = "569908483.991209"
+            timestampString = "569996967.112609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "sendFigure(fromPoint:toPoint:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NetworkDrawing4VEngine/UI/DrawBoard/ViewModel/DrawBoardViewModel.swift"
-            timestampString = "569908485.860972"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "drawLines(fromPoint:toPoint:frame:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "init(settings:navigationDelegate:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -234,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
-            timestampString = "569910408.572142"
+            timestampString = "569996967.113512"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "125"
@@ -250,7 +234,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/CoreLayer/Converters/FigureConverter.swift"
-            timestampString = "569910408.572403"
+            timestampString = "569996967.1158741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"

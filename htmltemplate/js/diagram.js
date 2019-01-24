@@ -375,6 +375,11 @@ var entities =
   ],
   "methods": [
     {
+  "name": "getFigure(figure:Figure)",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
   "name": "sendFigure(fromPoint:CGPoint,toPoint:CGPoint)",
   "type": "instance",
   "accessLevel": "internal"
@@ -422,6 +427,11 @@ var entities =
   "methods": [
     {
   "name": "pointsToFigureConverter(points:[CGPoint]) -> Figure",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
+  "name": "figureToPointsConverter(figure:Figure) -> [CGPoint]",
   "type": "instance",
   "accessLevel": "internal"
 }

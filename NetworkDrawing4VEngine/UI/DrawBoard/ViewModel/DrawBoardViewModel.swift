@@ -21,7 +21,16 @@ final class DrawBoardViewModel {
         self.navigationDelegate = navigationDelegate
 		
 		clearTimer = Timer.scheduledTimer(timeInterval: self.timeout, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
+		
+		self.interactor.reciveFigure = { figure in
+			self.getFigure(figure: figure)
+		}
     }
+	
+	func getFigure(figure:Figure)
+	{
+		let points = pointsConverter.figureToPointsConverter(figure:figure)
+	}
 	
 	func sendFigure(fromPoint:CGPoint,toPoint:CGPoint)
 	{
