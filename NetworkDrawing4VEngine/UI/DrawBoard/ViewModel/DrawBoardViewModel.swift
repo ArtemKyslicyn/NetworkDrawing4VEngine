@@ -13,6 +13,7 @@ final class DrawBoardViewModel {
 	var timeout :Double = 15
 	var points : [CGPoint] = [CGPoint]();
 	let pointsConverter = PointsFigureConverter()
+	public var recivePointsForFigure :(([CGPoint]) -> ())?
 	
     private  var navigationDelegate: DrawBoardNavigationDelegate?
     
@@ -30,6 +31,7 @@ final class DrawBoardViewModel {
 	func getFigure(figure:Figure)
 	{
 		let points = pointsConverter.figureToPointsConverter(figure:figure)
+		self.recivePointsForFigure?(points)
 	}
 	
 	func sendFigure(fromPoint:CGPoint,toPoint:CGPoint)
@@ -56,8 +58,7 @@ final class DrawBoardViewModel {
 		return UIGraphicsGetImageFromCurrentImageContext()
 	}
 	
-	@objc func runTimedCode()
-	{
+	@objc func runTimedCode(){
 		isDrawing = !isDrawing
 		//self.canvasImageView.clearScribble()
 	}

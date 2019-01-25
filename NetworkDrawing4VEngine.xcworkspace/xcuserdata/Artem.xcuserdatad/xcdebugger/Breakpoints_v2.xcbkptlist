@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
-            timestampString = "569996967.106567"
+            timestampString = "570081979.051391"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
             endingLineNumber = "32"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "drawPoints(points:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
-            timestampString = "569996967.1087821"
+            timestampString = "570081979.0532939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "settingsAction(_:)"
+            landmarkName = "init(coder:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -159,7 +159,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
-            landmarkName = "getFigure(figure:)"
+            landmarkName = "sendFigure(fromPoint:toPoint:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -170,12 +170,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
-            timestampString = "569996967.111194"
+            timestampString = "570081979.054215"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
             endingLineNumber = "35"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "drawPoints(points:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -186,13 +186,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
-            timestampString = "569996967.111899"
+            timestampString = "570081979.054741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "DrawBoardViewController"
-            landmarkType = "3">
+            landmarkName = "drawPoints(points:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -207,7 +207,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "init(settings:navigationDelegate:)"
+            landmarkName = "sendFigure(fromPoint:toPoint:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -218,12 +218,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
-            timestampString = "569996967.113512"
+            timestampString = "570081979.055243"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "125"
             endingLineNumber = "125"
-            landmarkName = "touchesEnded(_:with:)"
+            landmarkName = "touchesMoved(_:with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
