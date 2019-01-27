@@ -17,7 +17,9 @@ final class SettingsViewModel {
 		
     }
     
-    func closeButtonDidTap() {
+    func closeButtonDidTap(settings:Settings) {
+		
+		self.settings = settings
 		navigationDelegate?.settingsCloseDidTap()
     }
 }

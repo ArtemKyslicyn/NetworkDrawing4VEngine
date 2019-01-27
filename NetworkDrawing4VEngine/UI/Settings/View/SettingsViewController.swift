@@ -39,7 +39,7 @@ class SettingsViewController: UIViewController {
 	
 	
     @IBAction func onCloseButton(_ sender: Any) {
-        viewModel.closeButtonDidTap()
+        viewModel.closeButtonDidTap(settings: self.viewModel.settings)
     }
 	
 	
@@ -113,7 +113,7 @@ class SettingsViewController: UIViewController {
 //		if delegate != nil {
 //			delegate?.settingsViewControllerDidFinish(self)
 //		}
-		self.viewModel.closeButtonDidTap()
+		self.viewModel.closeButtonDidTap(settings: self.viewModel.settings)
 		
 	}
 	

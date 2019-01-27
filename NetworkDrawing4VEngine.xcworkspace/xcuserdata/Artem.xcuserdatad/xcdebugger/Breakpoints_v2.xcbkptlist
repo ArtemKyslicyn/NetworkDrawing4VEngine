@@ -25,30 +25,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NetworkDrawing4VEngine/UI/DrawingRouter.swift"
-            timestampString = "569063257.849937"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "showInitial()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
             timestampString = "570081979.0532939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "init(coder:)"
-            landmarkType = "7">
+            landmarkName = "DrawBoardViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawingRouter.swift"
-            timestampString = "569063257.850104"
+            timestampString = "570315362.817413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "openSettingsWith(settings:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/Settings/ViewModel/SettingsViewModel.swift"
-            timestampString = "568697956.867182"
+            timestampString = "570315362.818252"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "closeButtonDidTap()"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "closeButtonDidTap(settings:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawingRouter.swift"
-            timestampString = "569063257.850221"
+            timestampString = "570315362.818343"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "settingsCloseDidTap()"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawingRouter.swift"
-            timestampString = "569063257.850287"
+            timestampString = "570315362.818731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "removePresenter(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkDrawing4VEngine/UI/DrawingRouter.swift"
-            timestampString = "569063257.850348"
+            timestampString = "570315362.8190891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "removePresenter(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -240,6 +224,22 @@
             startingLineNumber = "18"
             endingLineNumber = "18"
             landmarkName = "convertFigureToData(figure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkDrawing4VEngine/UI/DrawBoard/View/DrawBoardViewController.swift"
+            timestampString = "570315046.8762521"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "onCloseButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -16,7 +16,7 @@ var entities =
   ],
   "methods": [
     {
-  "name": "closeButtonDidTap()",
+  "name": "closeButtonDidTap(settings:Settings)",
   "type": "instance",
   "accessLevel": "internal"
 },
@@ -223,6 +223,11 @@ var entities =
   "name": "openSettingsWith(settings:Settings)",
   "type": "instance",
   "accessLevel": "internal"
+},
+    {
+  "name": "closeSettingsWith(settings:Settings)",
+  "type": "instance",
+  "accessLevel": "internal"
 }
   ],
   "name": "DrawBoardNavigationDelegate",
@@ -368,6 +373,11 @@ var entities =
   "accessLevel": "internal"
 },
     {
+  "name": "var recivePointsForFigure :(([CGPoint]) -> ())?",
+  "type": "instance",
+  "accessLevel": "public"
+},
+    {
   "name": "var navigationDelegate: DrawBoardNavigationDelegate? @objc",
   "type": "instance",
   "accessLevel": "private"
@@ -486,6 +496,11 @@ var entities =
 }
   ],
   "methods": [
+    {
+  "name": "drawPoints(points:[CGPoint])",
+  "type": "instance",
+  "accessLevel": "internal"
+},
     {
   "name": "viewDidLoad()",
   "type": "instance",
@@ -1885,6 +1900,13 @@ var entities =
 },{
   "id": 10,
   "typeString": "extension",
+  "methods": [
+    {
+  "name": "closeSettingsWith(settings: Settings)",
+  "type": "instance",
+  "accessLevel": "internal"
+}
+  ],
   "protocols": [
     5
   ]
@@ -1892,6 +1914,11 @@ var entities =
   "id": 11,
   "typeString": "extension",
   "methods": [
+    {
+  "name": "settingsCloseDidTap(settings: Settings)",
+  "type": "instance",
+  "accessLevel": "internal"
+},
     {
   "name": "settingsCloseDidTap()",
   "type": "instance",

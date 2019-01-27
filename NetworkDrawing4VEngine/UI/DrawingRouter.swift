@@ -29,6 +29,7 @@ import UIKit
 // Delegate used to close the user details
 protocol DrawBoardNavigationDelegate: class {
 	func openSettingsWith(settings:Settings)
+	func closeSettingsWith(settings:Settings)
 }
 
 protocol SettingsNavigationDelegate: class {
@@ -78,11 +79,22 @@ extension DrawingRouter: Router {
 }
 
 extension DrawingRouter: DrawBoardNavigationDelegate {
-
+	func closeSettingsWith(settings: Settings) {
+		
+		let usersListPresenter = presenters["DrawBoard"]
+		//usersListPresenter?.
+		
+		presenters["DrawBoard"] = usersListPresenter
+	}
+	
 
 }
 
 extension DrawingRouter: SettingsNavigationDelegate {
+
+	func settingsCloseDidTap(settings: Settings) {
+		removePresenter(for: "Settings")
+	}
 	
 	func settingsCloseDidTap() {
 		removePresenter(for: "Settings")
