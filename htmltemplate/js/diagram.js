@@ -328,7 +328,7 @@ var entities =
   "typeString": "class",
   "properties": [
     {
-  "name": "let settings:Settings",
+  "name": "var settings:Settings",
   "type": "instance",
   "accessLevel": "public"
 },
@@ -464,6 +464,11 @@ var entities =
   ],
   "methods": [
     {
+  "name": "updateSettings(settings:Settings)",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
   "name": "init(settings: Settings, navigationDelegate: DrawBoardNavigationDelegate)",
   "type": "instance",
   "accessLevel": "internal"
@@ -572,6 +577,11 @@ var entities =
   "methods": [
     {
   "name": "present(in parentViewController: UIViewController)",
+  "type": "instance",
+  "accessLevel": "internal"
+},
+    {
+  "name": "updateSetings(settings:Settings)",
   "type": "instance",
   "accessLevel": "internal"
 },

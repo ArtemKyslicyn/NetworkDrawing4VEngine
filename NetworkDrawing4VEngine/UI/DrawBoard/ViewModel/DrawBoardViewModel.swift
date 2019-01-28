@@ -4,7 +4,7 @@ import UIKit
 
 final class DrawBoardViewModel {
     
-	public let settings:Settings
+	public var settings:Settings
 	let interactor = DrawBoardInteractor()
 	var clearTimer: Timer?
 	var lastPoint = CGPoint.zero

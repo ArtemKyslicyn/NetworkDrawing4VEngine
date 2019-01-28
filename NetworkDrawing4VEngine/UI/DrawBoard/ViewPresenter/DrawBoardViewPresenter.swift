@@ -42,6 +42,11 @@ final class DrawBoardViewPresenter: ViewPresenter {
 		parentViewController.addFillerChildViewController(viewFactory.viewController)
 	}
 	
+	func updateSetings(settings:Settings)
+	{
+		viewFactory.viewController
+	}
+	
 	// Method to remove the component from the device screen
 	func remove() {
 		viewFactory.viewController.view.removeFromSuperview()

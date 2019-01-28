@@ -34,4 +34,9 @@ final class DrawBoardViewFactory {
         viewModel = DrawBoardViewModel(settings: settings, navigationDelegate: navigationDelegate)
         viewController = DrawBoardViewController(viewModel: viewModel)
     }
+	
+	func updateSettings(settings:Settings)
+	{
+		viewModel.settings = settings
+	}
 }

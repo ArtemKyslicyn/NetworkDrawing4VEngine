@@ -109,10 +109,9 @@ class SettingsViewController: UIViewController {
 	*/
 	@IBAction func settingsSelected(_ sender: Any) {
 		self.viewModel.settings.onlyStylus = self.stylusSwitch.isOn
-		self.viewModel.settings.brushSize = CGFloat(brushSlider.value * 50)
-//		if delegate != nil {
-//			delegate?.settingsViewControllerDidFinish(self)
-//		}
+		//self.viewModel.settings.brushSize = CGFloat(brushSlider.value * 50)
+		//self.viewModel.settings.color = neatColorPicker.currentColor
+
 		self.viewModel.closeButtonDidTap(settings: self.viewModel.settings)
 		
 	}

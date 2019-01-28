@@ -25,7 +25,7 @@ final class SettingDetailsViewPresenter: ViewPresenter {
     func present(in parentViewController: UIViewController) {
         parentViewController.addFillerChildViewController(viewFactory.viewController)
     }
-    
+	
     func remove() {
         viewFactory.viewController.view.removeFromSuperview()
 		viewFactory.viewController.removeFromParent()
