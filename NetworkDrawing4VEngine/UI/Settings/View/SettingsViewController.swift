@@ -70,7 +70,7 @@ class SettingsViewController: UIViewController {
 	@IBAction func colorChanged(_ sender: Any) {
 		
 	   self.viewModel.settings.color = neatColorPicker.currentColor
-//		color = neatColorPicker.currentColor
+		color = neatColorPicker.currentColor
 		drawPreview(color: self.viewModel.settings.color)
 	}
 	
@@ -108,7 +108,7 @@ class SettingsViewController: UIViewController {
 	- sender: The UIButton object that invokes this method on press
 	*/
 	@IBAction func settingsSelected(_ sender: Any) {
-		self.viewModel.settings.onlyStylus = self.stylusSwitch.isOn
+		self.viewModel.settings.onlyStylus = !self.stylusSwitch.isOn
 		//self.viewModel.settings.brushSize = CGFloat(brushSlider.value * 50)
 		//self.viewModel.settings.color = neatColorPicker.currentColor
 

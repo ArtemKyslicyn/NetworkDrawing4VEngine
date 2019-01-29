@@ -44,7 +44,7 @@ final class DrawBoardViewPresenter: ViewPresenter {
 	
 	func updateSetings(settings:Settings)
 	{
-		viewFactory.viewController
+		viewFactory.updateSettings(settings: settings)
 	}
 	
 	// Method to remove the component from the device screen

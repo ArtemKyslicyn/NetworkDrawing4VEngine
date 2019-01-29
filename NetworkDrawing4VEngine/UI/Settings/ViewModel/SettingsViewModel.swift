@@ -20,6 +20,6 @@ final class SettingsViewModel {
     func closeButtonDidTap(settings:Settings) {
 		
 		self.settings = settings
-		navigationDelegate?.settingsCloseDidTap()
+		navigationDelegate?.closeSettingsWith(settings: settings)
     }
 }

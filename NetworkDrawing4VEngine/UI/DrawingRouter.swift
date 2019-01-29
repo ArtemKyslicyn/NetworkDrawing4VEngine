@@ -34,7 +34,7 @@ protocol DrawBoardNavigationDelegate: class {
 
 protocol SettingsNavigationDelegate: class {
 	func openSettingsWith(settings:Settings)
-	func settingsCloseDidTap()
+	func closeSettingsWith(settings:Settings)
 }
 
 protocol BoardDrawNavigationDelegate: class {
@@ -81,10 +81,11 @@ extension DrawingRouter: Router {
 extension DrawingRouter: DrawBoardNavigationDelegate {
 	func closeSettingsWith(settings: Settings) {
 		
-		let usersListPresenter = presenters["DrawBoard"]
-		//usersListPresenter?.
+		let usersListPresenter = presenters["DrawBoard"] as? DrawBoardViewPresenter
+		usersListPresenter?.updateSetings(settings: settings)
 		
-		presenters["DrawBoard"] = usersListPresenter
+		
+		removePresenter(for: "Settings")
 	}
 	
 

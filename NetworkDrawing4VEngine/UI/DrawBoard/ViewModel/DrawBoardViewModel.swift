@@ -5,14 +5,14 @@ import UIKit
 final class DrawBoardViewModel {
     
 	public var settings:Settings
-	let interactor = DrawBoardInteractor()
-	var clearTimer: Timer?
-	var lastPoint = CGPoint.zero
-	var swiped = false
-	var isDrawing = true
-	var timeout :Double = 15
-	var points : [CGPoint] = [CGPoint]();
-	let pointsConverter = PointsFigureConverter()
+	public let interactor = DrawBoardInteractor()
+	public var clearTimer: Timer?
+	public var lastPoint = CGPoint.zero
+	public var swiped = false
+	public var isDrawing = true
+	public var timeout :Double = 15
+	public var points : [CGPoint] = [CGPoint]();
+	public let pointsConverter = PointsFigureConverter()
 	public var recivePointsForFigure :(([CGPoint]) -> ())?
 	
     private  var navigationDelegate: DrawBoardNavigationDelegate?
@@ -27,6 +27,10 @@ final class DrawBoardViewModel {
 			self.getFigure(figure: figure)
 		}
     }
+	
+	func updateSettings(settings:Settings) {
+		self.settings = settings
+	}
 	
 	func getFigure(figure:Figure)
 	{

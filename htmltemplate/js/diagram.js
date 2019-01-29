@@ -242,7 +242,7 @@ var entities =
   "accessLevel": "internal"
 },
     {
-  "name": "settingsCloseDidTap()",
+  "name": "closeSettingsWith(settings:Settings)",
   "type": "instance",
   "accessLevel": "internal"
 }
@@ -335,42 +335,42 @@ var entities =
     {
   "name": "let interactor",
   "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "public"
 },
     {
   "name": "var clearTimer: Timer?",
   "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "public"
 },
     {
   "name": "var lastPoint",
   "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "public"
 },
     {
   "name": "var swiped",
   "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "public"
 },
     {
   "name": "var isDrawing",
   "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "public"
 },
     {
   "name": "var timeout :Double",
   "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "public"
 },
     {
   "name": "var points : [CGPoint]",
   "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "public"
 },
     {
   "name": "let pointsConverter",
   "type": "instance",
-  "accessLevel": "internal"
+  "accessLevel": "public"
 },
     {
   "name": "var recivePointsForFigure :(([CGPoint]) -> ())?",
@@ -384,6 +384,11 @@ var entities =
 }
   ],
   "methods": [
+    {
+  "name": "updateSettings(settings:Settings)",
+  "type": "instance",
+  "accessLevel": "internal"
+},
     {
   "name": "getFigure(figure:Figure)",
   "type": "instance",

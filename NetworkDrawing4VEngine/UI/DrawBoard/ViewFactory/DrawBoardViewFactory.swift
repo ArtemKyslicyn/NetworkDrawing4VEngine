@@ -37,6 +37,6 @@ final class DrawBoardViewFactory {
 	
 	func updateSettings(settings:Settings)
 	{
-		viewModel.settings = settings
+		viewModel.updateSettings(settings: settings)
 	}
 }
