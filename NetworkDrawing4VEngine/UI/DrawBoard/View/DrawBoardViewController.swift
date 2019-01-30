@@ -29,6 +29,10 @@ class DrawBoardViewController: UIViewController {
 	
 	func drawPoints(points:[CGPoint])
 	{
+		canvasImageView.drawingLayer.strokeColor =  self.viewModel.settings.color.cgColor
+		canvasImageView.backgroundLayer.strokeColor =  self.viewModel.settings.color.cgColor
+		canvasImageView.drawingLayer.lineWidth =  self.viewModel.settings.brushSize
+		
 		canvasImageView.beginScribble(point: points.first!)
 		points.forEach  {
 			canvasImageView.appendScribble(point: $0)
