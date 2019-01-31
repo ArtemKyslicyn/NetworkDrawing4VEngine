@@ -29,9 +29,7 @@ class DrawBoardViewController: UIViewController {
 	
 	func drawPoints(points:[CGPoint])
 	{
-		canvasImageView.drawingLayer.strokeColor =  self.viewModel.settings.color.cgColor
-		canvasImageView.backgroundLayer.strokeColor =  self.viewModel.settings.color.cgColor
-		canvasImageView.drawingLayer.lineWidth =  self.viewModel.settings.brushSize
+		
 		
 		canvasImageView.beginScribble(point: points.first!)
 		points.forEach  {
@@ -81,6 +79,11 @@ class DrawBoardViewController: UIViewController {
 	// Overriding the touches Began,moved and ended methods to get the initial touch location point and draw the line from last known point to current point.
 	
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		
+		canvasImageView.drawingLayer.strokeColor =  self.viewModel.settings.color.cgColor
+		canvasImageView.backgroundLayer.strokeColor =  self.viewModel.settings.color.cgColor
+		canvasImageView.drawingLayer.lineWidth =  self.viewModel.settings.brushSize
+		
 		if !viewModel.settings.smoothLine
 		{
 			viewModel.swiped = false
